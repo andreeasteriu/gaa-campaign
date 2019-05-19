@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia Pro", sans-serif;
+	}
+
+/**** HEADER SECTION ****/
+
+.logo img {
+    width: 20%;
+    position: absolute;
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    padding: 20px 30px;
+    z-index: 1000;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/***** NAVIGATION *****/
+
+.burger-menu {
+    font-size: 26px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    right: 30px;
+    color: #FF5B91;
+    border: 2px solid #FF5B91;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+
+.main-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+
+
+}
+
+.main-nav a {
+    padding: 20px 32px 10px 8px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 20px;
+    color: #FF5B91;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+.main-nav a:active {
+    color: #f1f1f1;
+    border-right: 3px solid #FFFFFF;
+
+}
+
+.main-nav a:first-child {
+padding-top: 2px;
+}
+
+.closebtn {
+    font-size: 40px;
+    cursor: pointer;
+    color: #FF5B91;
+    border: 2px solid #FF5B91;
+    padding: 1px 10px;
+    border-radius: 5px;
+
+}
+
+.open {
+    width: 100%;
+}
+
+.close {
+    width: 0;
+}
+
+
+
+
+
+
+
+
+/****************** TABLET **************************/
+
+@media only screen and (min-width: 30em) {
+
+
+
+
+}
+
+
+
+/***************** DESKTOP ***********************/
+
+@media only screen and (min-width:60em) {
+
+
+/**** HEADER SECTION ****/
+
+.logo img {
+    width: 15%;
+    max-width: 300px;
+}
+
+    header {
+        margin: 1em;
+    }
+
+
+/***** NAVIGATION *****/
+
+.burger-menu {
+    display: none;
+}
+
+
+
+.main-nav {
+    display: inline-block;
+    opacity: 1;
+    height: 120px;
+    width: 100%;
+     position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    margin: 2em;
+
+}
+
+.nav-left {
+    display: inline-block;
+    float: right;
+}
+
+.main-nav a {
+    display: inline-block;
+    text-transform: none;
+
+}
+
+.main-nav a:hover {
+    color: #fff;
+
+
+}
+
+.closebtn {
+        display: none;
+    }
+
+
+  .cv-btn{
+    display: inline-block;
+    border: none;
+/*    width: 100px;*/
+    background: none;
+    border-radius: 11px;
+
+    font-size: 15px;
+    font-weight: 100;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+
+    border: 2px solid #02B3E2;
+    border-radius: 4px;
+    padding: 10px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+
+    overflow: hidden;
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    color: #FF5B91;
+    border: 2px solid #FF5B91;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+ .cv-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: rgba(2,204,186,0.9);
+    z-index: -1;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+
+.cv-btn:hover{
+    background: #FF5B91;
+    color: #fff !important;
+}
+
+ .cv-btn:hover::before {
+    opacity: 1;
+    background-color: white;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    background-color: #FF5B91;
+}
+nav .cv-btn{
+    padding:8px 10px;
+    margin: 0;
+}
+
+
+
+
+}
