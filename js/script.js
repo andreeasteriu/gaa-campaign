@@ -15,3 +15,15 @@ function closeNav() {
     sidenav.classList.add('close');
 
 }
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("sidenav").style.top = "0";
+  } else {
+    document.getElementById("sidenav").style.top = "-90px";
+  }
+  prevScrollpos = currentScrollPos;
+}
