@@ -26,6 +26,13 @@ h1 {
 p {
     color: #FFF;
 }
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
 /**** HEADER SECTION ****/
 
 .logo img {
@@ -118,7 +125,6 @@ padding-top: 2px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 3em;
-    padding-bottom: 2em;
     max-width: 600px !important;
     width: 100%;
     min-height: 100%;
@@ -155,15 +161,14 @@ padding-top: 2px;
 .container div:nth-child(5){
     background-color: lightslategray;
     grid-column: 1/ span 2;
-    grid-row: 14/ span 13;
+    grid-row:14/ span 13;
     padding: 1em;
 
 }
 
-img {
-    display: block;
-    margin: auto;
-}
+
+
+
 
 /****BENEFITS SECTION *****/
 
@@ -171,72 +176,213 @@ img {
        width: 100%;
     }
 
+
+
+
 /***** HOW SECTION *******/
 
 .how-section {
-    background-color: lightslategray;
+    background: gray;
+}
+
+.how-section .banner {
+    position: absolute;
+    padding-top: 1em;
+    z-index: 2;
+}
+
+
+#slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {
     position: relative;
 }
 
-.how-section img {
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+.slide1 {
+    background-image: url('assets/tess5.jpg')
+}
+
+.slide2 {
+    background-image: url('assets/tess6.jpg')
+}
+
+.slide3 {
+    background-image: url('assets/tess7.jpg')
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 20vh;
+}
+
+.text {
+    font-size: 3em;
+    color: #fff;
+}
+
+
+.how-next-button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.how-next-button img {
+        width: 100%;
+    }
+
+.numbertext h1 {
+    text-align: center;
+    font-size: 300px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+
+
+}
+
+.numbertext {
+     position: absolute;
+    right: 0;
+    bottom: 2em;
+    margin: 0;
     width: 100%;
+}
+
+.small-next {
+margin: -20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+/****FEATURED SECTION *****/
+
+.featured-section {
+    margin-bottom: 12em;
+}
+.banner {
+    width: 100%;
+    padding: 0 0 5em 0;
+}
+
+
+.carousel {
+    position: relative;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 12em;
+
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-track-container {
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button {
+    background: transparent;
+    border: none;
+    padding: 1em;
+
+}
+
+
+.carousel-button img {
+    width: 20px;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    margin: 1em auto;
+
+}
+
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,.3);
+    margin: 0 15px;
+}
+
+.carousel-indicator.current-slide {
+    background: rgba(0,0,0,.75);
+}
+
+
+
+/******** COLLABORATE SECTION *******/
+
+.collaborate-section {
+    display: grid;
+    grid-template-columns: "1fr 1fr";
+
+}
+
+.collaborate-image {
+    grid-template-areas: 1fr;
+    background-image: url(assets/46522819_2043789555664339_4940279402010247168_o.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20%;
     margin: 0;
 
 }
 
-carousel-container-how {
- width: 100%;
-}
-
-/****FEATURED SECTION *****/
-
-.featured-section img {
-    width: 100%;
-    padding: 2em 0;
-}
 
 
-.carousel-container {
-    max-width: 50vw;
-    max-height: 50vh;
-    margin: 0 auto;
 
-}
-
-
-/* footer */
-body{
-    position: relative;
-}
-footer{
-    background: rgb(2,179,228);
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
-    background: linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
-    width: 100vw;
-    padding: 20px;
-    position: absolute;
-}
-footer a {
-    text-decoration: underline;
-    padding-left: 5px;
-}
-footer p, footer .fab {
-    color: white;
-}
-.project, .hello{
-    display: inline-block;
-    padding: 10px;
-}
-footer .icons{
-    display: inline-block;
-    float: right;
-}
-
-footer .icons .fab{
-    font-size: 20px;
-}
 
 /****************** TABLET **************************/
 
@@ -247,9 +393,7 @@ footer .icons .fab{
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     padding-bottom: 2em;
-    grid-gap: .5em;
     max-width: 800px !important;
     width: 100%;
     min-height: 100%;
@@ -270,6 +414,30 @@ footer .icons .fab{
         max-width: 40vw;
     max-height: 40vh;
     }
+
+
+
+/****** HOW SECTION ********/
+
+    .slide-content {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .numbertext h1 {
+    text-align: right;
+    font-size: 40vw;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+
+
+}
+
+
+/***** COLLABORATE SECTION *******/
+
+
+
 
 }
 
@@ -293,6 +461,7 @@ footer .icons .fab{
         margin-top: 5em;
         width: 20px;
     }
+
 
     .main-nav {
             position: absolute;
@@ -498,17 +667,57 @@ nav .cv-btn{
 
     /*****FEATURED SECTION *******/
 
+    .banner {
+    padding: 1em 0 2em;
 
-    .carousel-container {
-    max-width: 50vw;
+    }
+    .carousel-nav {
+        width: 15vw;
 
+    }
+
+     .thunder-icon-2 {
+        width: 1em;
+    }
+
+    .carousel-button:hover {
+     background-color: rgba(255,91,145,.5);
+    border-radius: 50%;
+    transition: 0.5s ease;
 }
 
-    .carousel-container img {
+    .carousel {
+    position: relative;
+    height: 550px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 12em;
 
+}
+    .carousel-button img {
+        width: 30px;
+    }
+
+
+    /****** HOW SECTION ******/
+
+
+    .numbertext h1 {
+        font-size: 30vw;
+    }
+
+    .how-next-button img {
+        width: 20vw;
     }
 
 
 
+    .how-next-button {
+        bottom: 3em;
+    right: 20em;
+    }
+
+
+    /***** COLLABORATE SECTION *******/
 
 }
