@@ -198,12 +198,10 @@ SELECT APPLICANTS </div>
 <section class="collaborate-section">
 
 <div class="collaborate-image">
-
 </div>
+
 <div class="form-wrapper">
-
-
-
+DD
 </div>
 
 </section>
