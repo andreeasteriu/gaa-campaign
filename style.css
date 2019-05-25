@@ -161,7 +161,6 @@ padding-top: 2px;
 }
 
 .container div:nth-child(5){
-    background-color: lightslategray;
     grid-column: 1/ span 2;
     grid-row:14/ span 13;
     padding: 1em;
@@ -174,8 +173,22 @@ padding-top: 2px;
 
 /****BENEFITS SECTION *****/
 
-.benefits-section img {
+.benefits-section {
+    background-color: #FEDC34;
+    overflow: hidden;
+
+}
+
+.benefits-image {
        width: 100%;
+    height: 100%;
+     background-image: url(assets/glasses-girl-yellow-fliped.png);
+   display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    max-width: 100vw;
+    max-height: 55vh;
     }
 
 
@@ -183,15 +196,15 @@ padding-top: 2px;
 
 /***** HOW SECTION *******/
 
-.how-section {
-    background: gray;
-}
 
-.how-section .banner {
+.how-section .how-banner {
     position: absolute;
-    padding-top: 1em;
+width: 100%;
     z-index: 2;
 }
+
+
+/* marquees text */
 
 @keyframes ticker {
   0% {
@@ -202,12 +215,8 @@ padding-top: 2px;
   }
 }
 
-
-/* marquees text */
-
 section .group {
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
   display: -webkit- flex;
   /* Safari */
   display: flex;
@@ -221,7 +230,7 @@ section .group {
   overflow: hidden;
 }
 section .group .row {
-  width: 400vw;
+  width: 500vw;
   display: -webkit- flex;
   /* Safari */
   display: flex;
@@ -248,7 +257,7 @@ section .group .row:nth-child(even) {
 section .group .row span {
   font-family: 'IBM Plex Sans', sans-serif;
   color: transparent;
-  font-size: 10vw;
+  font-size: 6vw;
   font-weight: bold;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
@@ -476,10 +485,12 @@ margin: -20px 0;
     flex-direction: row;
     justify-content: space-around;
 }
-    .benefits-section img {
-        max-width: 40vw;
-    max-height: 40vh;
-    }
+
+.benefits-image  {
+    max-width: 40vw;
+    max-height: 100%;
+
+}
 
 
 
@@ -722,7 +733,6 @@ nav .cv-btn{
 
     .container div:nth-child(5){
         margin-top: 6em;
-         background-color: lightblue;
           grid-column: 1/ span 12;
         grid-row: 6/ span 6;
         background-size: cover;
@@ -730,6 +740,10 @@ nav .cv-btn{
         background-repeat: no-repeat;
 
     }
+
+    /******BENEFITS SECTION *******/
+
+
 
     /*****FEATURED SECTION *******/
 
