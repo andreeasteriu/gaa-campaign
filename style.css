@@ -358,7 +358,7 @@ margin: -20px 0;
 /****FEATURED SECTION *****/
 
 .featured-section {
-    margin-bottom: 12em;
+    height: 100vh;
 }
 .banner {
     width: 100%;
@@ -444,7 +444,8 @@ margin: -20px 0;
 .collaborate-section {
  background-color: #FF5859;
  overflow: hidden;
- height: 100vh;
+height: 1040px;
+
 
 
 
@@ -465,8 +466,122 @@ margin: -20px 0;
 
 .form-wrapper {
     padding: 1em;
+
 }
 
+.form-container {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.form-group {
+    margin: 2em 0;
+
+}
+.form-group:nth-child(3) {
+    margin-bottom: 0;
+}
+
+form {
+    display: block;
+    margin: auto;
+}
+
+input[type=text], textarea {
+  border: none;
+  border-bottom: 2px solid #000;
+   width: 100%;
+    outline: none;
+    background-color: transparent;
+padding: 12px;
+}
+
+input[type=text]:focus, textarea:focus {
+ border-bottom: 2px solid #FEDC34;
+}
+
+.alert {
+    display: flex;
+    padding: .8em;
+    justify-content: center;
+    font-size: 1.1em;
+    border-radius: 10px;
+
+}
+
+.alert-danger {
+    background: #FF0000 !important;
+}
+
+.alert-success {
+    background: #03FF20 !important;
+}
+
+.btn-form {
+   display: inline-block;
+    border: none;
+    width: 100%;
+    background: #FEDC34;
+    border-radius: 11px;
+    font-size: 15px;
+    font-weight: 100;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+
+    border: 2px solid #FEDC34;
+    border-radius: 4px;
+    padding: 10px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+
+    overflow: hidden;
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    color: #000;
+    border: 2px solid #FEDC34;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+ .btn-form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: rgba(2,204,186,0.9);
+    z-index: -1;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+
+.btn-form:hover{
+    background: #FEDC34;
+    color: #000 !important;
+}
+
+ .btn-form:hover::before {
+    opacity: 1;
+    background-color: white;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    background-color: #FFF;
+}
 
 
 /****************** TABLET **************************/
@@ -516,16 +631,11 @@ margin: -20px 0;
     font-size: 40vw;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 2px;
-
-
 }
 
 
-/***** COLLABORATE SECTION *******/
-
 
     section .group .row span {
-  font-family: 'IBM Plex Sans', sans-serif;
   color: transparent;
   font-size: 6.5vw;
   font-weight: bold;
@@ -534,7 +644,32 @@ margin: -20px 0;
 }
 
 
+/***** COLLABORATE SECTION *******/
 
+    .collaborate-section {
+        display: grid;
+         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        height: auto;
+        padding-right: 1em;
+    }
+
+    .collaborate-image {
+        grid-column: 1/ span 1;
+       align-self: center;
+        background-size: contain;
+    }
+
+    .form-wrapper {
+        padding-top: 3em;
+        grid-column: 2/ span 1;
+        align-self: center;
+
+    }
+
+    .form-group:nth-child(1) {
+        margin-top: 1em;
+    }
 
 
 }
@@ -822,12 +957,7 @@ nav .cv-btn{
     display: block;
 }
 
-
-    /***** COLLABORATE SECTION *******/
-
-
-    section .group .row span {
-  font-family: 'IBM Plex Sans', sans-serif;
+       section .group .row span {
   color: transparent;
   font-size: 6vw;
   font-weight: bold;
@@ -836,8 +966,23 @@ nav .cv-btn{
 }
 
 
+    /***** COLLABORATE SECTION *******/
 
 
+    .btn-form{
+        display: block;
+        width: auto;
+        margin: auto;
+        padding: 10px 5em;
+    }
+
+    .collaborate-section {
+        height: 100vh;
+    }
+
+    .collaborate-image {
+
+    }
 
 
 }

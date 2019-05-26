@@ -64,10 +64,6 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
 
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -232,6 +228,44 @@ SELECT APPLICANTS </div>
 </section>
 
 
+
+<section class="collaborate-section">
+
+<div class="collaborate-image">
+</div>
+
+<div class="form-wrapper">
+    <h1 class="title-collaborate">COLLABORATE<br><span class="stroke">WITH US</span></h1>
+<div class="form-container">
+ <?php if($msg != ''): ?>
+ <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+ <?php endif; ?>
+  <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+     <div class="form-group">
+      <label><h4>Your Name</h4></label>
+      <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
+      </div>
+
+   <div class="form-group">
+       <label><h4>E-mail</h4></label>
+      <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
+      </div>
+
+    <div class="form-group">
+        <label><h4>Tell us something about yourself</h4></label>
+     <textarea name="message" class="form-control" rows="5" cols="50"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+      </div>
+      <br>
+      <button  type="submit" name="submit" class="btn-form"><h3>SUBMIT</h3></button>
+  </form>
+   </div>
+
+
+</div>
+
+</section>
+
+
 <section class="featured-section">
 
    <img class="banner" src="assets/SVG/gaa-banner.svg" alt="">
@@ -258,45 +292,6 @@ SELECT APPLICANTS </div>
         <img src="assets/SVG/slide-right.svg" alt="">
     </button>
      </div>
-</div>
-
-</section>
-
-
-
-
-<section class="collaborate-section">
-
-<div class="collaborate-image">
-</div>
-
-<div class="form-wrapper">
-    <h1 class="title-collaborate">COLLABORATE<br><span class="stroke">WITH US</span></h1>
-<div class="form-container">
- <?php if($msg != ''): ?>
- <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
- <?php endif; ?>
-  <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-     <div class="form-group">
-      <label>Name</label>
-      <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-      </div>
-
-   <div class="form-group">
-       <label>Email</label>
-      <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-      </div>
-
-    <div class="form-group">
-        <label>Message</label>
-     <textarea name="message" class="form-control"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-      </div>
-      <br>
-      <button  type="submit" name="submit" class="btn btn-primary">SUBMIT</button>
-  </form>
-   </div>
-
-
 </div>
 
 </section>
