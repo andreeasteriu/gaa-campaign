@@ -1,3 +1,73 @@
+<?php
+
+// Message Vars
+$msg = '';
+$msgClass = '';
+// Check for submit
+
+if(filter_has_var(INPUT_POST, 'submit')){
+    // Get Form Data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+     $message = htmlspecialchars($_POST['message']);
+
+    // Check Required Fields
+    if (!empty($email) && !empty($name) && !empty($message)){
+        //Passed
+        // Check Email
+        if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+            //Failed
+        $msg = 'Please use a valid email';
+        $msgClass = 'alert-danger';
+
+        } else {
+            //Passed
+            //Recipient Email
+            $toEmail = 'steriuandreea@deckadev.com';
+            $subject = 'Contact Request Form '.$name;
+            $body = '<h2>Contact Request</h2>
+            <h4>Name</h4><p>'.$name.'</p>
+            <h4>Email</h4><p>'.$email.'</p>
+            <h4>Message</h4><p>'.$message.'</p>';
+
+            // Email Headers
+            $headers = "MIME-Version: 1.0" ."\r\n";
+            $headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+
+            //Additional Headers
+            $headers .= "From: " .$name. "<".$email.">". "\r\n";
+
+            if(mail($toEmail, $subject, $body, $headers)){
+                // Email Sent
+                $msg = 'Your email has been sent';
+                $msgClass = 'alert-success';
+            } else {
+                $msg = 'Your email was not sent';
+                $msgClass = 'alert-danger';
+            }
+
+        }
+
+    } else {
+        //Failed
+
+        $msg = 'please fill in all fields';
+        $msgClass = 'alert-danger';
+
+    }
+
+
+
+}
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +77,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Girls Are Awesome</title>
@@ -66,7 +136,7 @@
    <div></div>
     <div class="benefits-section">
     <span class="benefits-text">
-       <h1>Benefits</h1>
+       <h1>BENEFITS</h1>
         <p>Exposure to our community of 70,000 + users</p>
         <p>Share your story</p>
         <p>Create an impact</p>
@@ -102,21 +172,21 @@
       <span>HOW</span>
       <span>HOW</span>
       <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
-      <span>HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
+      <span class="extra-hows">HOW</span>
     </div>
 </div>
 </section>
@@ -201,7 +271,32 @@ SELECT APPLICANTS </div>
 </div>
 
 <div class="form-wrapper">
-DD
+    <h1 class="title-collaborate">COLLABORATE<br><span class="stroke">WITH US</span></h1>
+<div class="form-container">
+ <?php if($msg != ''): ?>
+ <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+ <?php endif; ?>
+  <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+     <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
+      </div>
+
+   <div class="form-group">
+       <label>Email</label>
+      <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
+      </div>
+
+    <div class="form-group">
+        <label>Message</label>
+     <textarea name="message" class="form-control"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+      </div>
+      <br>
+      <button  type="submit" name="submit" class="btn btn-primary">SUBMIT</button>
+  </form>
+   </div>
+
+
 </div>
 
 </section>
