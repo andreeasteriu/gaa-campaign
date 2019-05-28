@@ -50,75 +50,72 @@ header{
     text-rendering: optimizeLegibility;
 }
 
-
-
-/***** NAVIGATION *****/
-
-.burger-menu {
-    font-size: 26px;
-    cursor: pointer;
-    position: fixed;
-    z-index: 1;
-    top: 10px;
-    right: 30px;
-    color: #FF5B91;
-    border: 2px solid #FF5B91;
-    padding: 0 8px;
-    border-radius: 5px;
-}
-
-.main-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #FFF;
-
-
-}
-
-.main-nav a {
-    padding: 20px 32px 10px 8px;
-    text-decoration: none;
-    text-align: right;
-    font-size: 20px;
-    color: #FF5B91;
-    font-weight: bold;
-    display: block;
-    text-transform: uppercase;
-}
-
-
-.main-nav a:active {
-    color: #f1f1f1;
-    border-right: 3px solid #FFFFFF;
-
-}
-
-.main-nav a:first-child {
-padding-top: 2px;
-}
-
-.closebtn {
-    font-size: 40px;
-    cursor: pointer;
-    color: #FF5B91;
-    border: 2px solid #FF5B91;
-    padding: 1px 10px;
-    border-radius: 5px;
-
-}
-
-.open {
+video {
     width: 100%;
 }
 
-.close {
-    width: 0;
+/***** NAVIGATION *****/
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: #FFF;
+    margin: 5px;
+}
+nav {
+    position: relative;
 }
 
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%,-50%);
+    z-index: 2;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #FF5859;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(80px at 90% -10%);
+    -webkit-clip-path: circle(80px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+
+.nav-links.open {
+     clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+}
+
+.nav-links li {
+    opacity: 0;
+}
+
+nav-links li a {
+    font-size: 25px;
+}
+
+.nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2) {
+     transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3) {
+     transition: all 0.5s ease 0.6s;
+}
+
+li.fade {
+    opacity: 1;
+}
 
 /****DESCRIPTION SECTION MOBILE****/
 
@@ -645,7 +642,7 @@ footer {
 }
 
 .contact-content {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .fas {
@@ -749,9 +746,44 @@ footer {
 }
 
 
+.right {
+    grid-column: 1/ span 1;
+    grid-row: 1/span 2;
+     text-align: center;
+}
 
+.left {
+    grid-column: 3/span 1;
+    grid-row: 1/ span 2;
+     text-align: center;
 
+}
 
+.center {
+    grid-column: 2/span 1;
+    grid-row: 1/ span 2;
+     text-align: center;
+}
+
+    footer p {
+        font-size: 13px;
+    }
+    footer {
+        position: relative;
+        grid-gap:
+    }
+    .copyrights {
+        position: absolute;
+        margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+        bottom: 1em;
+    }
+
+    .center img {
+        width: 8%;
+    }
 }
 
 
@@ -795,45 +827,25 @@ footer {
 
 /***** NAVIGATION *****/
 
-.burger-menu {
-    display: none;
-}
+    nav {
+        height: 10vh;
+        background: transparent;
+    }
 
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 50%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+    }
 
-
-.main-nav {
-    display: inline-block;
-    opacity: 1;
-    height: 120px;
-    width: 100%;
-     position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    margin: 2em;
-
-}
-
-.nav-left {
-    display: inline-block;
-    float: right;
-}
-
-.main-nav a {
-    display: inline-block;
-    text-transform: none;
-
-}
-
-.main-nav a:hover {
-    color: #fff;
-
-
-}
-
-.closebtn {
-        display: none;
+    .nav-links li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size 16px;
     }
 
 
@@ -1067,5 +1079,24 @@ nav .cv-btn{
 
     /****** FOOTER SECTION ******/
 
+    .center img {
+        width: 7%;
+    }
+
+    .copyrights {
+        color: #FFF;
+    }
+
+    .contact-content {
+        color: #FFF;
+    }
+
+    .left {
+    display: grid;
+    }
+
+    .contact-center {
+     align-self: center;
+    }
 
 }

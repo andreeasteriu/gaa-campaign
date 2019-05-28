@@ -1,20 +1,15 @@
-let sidenav = document.getElementById("sidenav");
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelector('.nav-links li');
 
 
-function openNav() {
-    sidenav.classList.add('open');
-    sidenav.classList.remove('close');
-    sidenav.style.transition = "0.5s";
-}
+hamburger.addEventListener('click',() => {
+  navLinks.classList.toggle('open');  links.forEach(link => {
+      link.classList.toggle('fade');
+  });
 
 
-function closeNav() {
-    sidenav.style.transition = "0.5s";
-    sidenav.classList.remove('open');
-    sidenav.classList.remove('open-mq');
-    sidenav.classList.add('close');
-
-}
+});
 
 /*
 var prevScrollpos = window.pageYOffset;

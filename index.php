@@ -91,29 +91,33 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
 
 <section id="header">
-<!---
-            <header>
+
+<header>
                 <div class="logo">
                     <img src="assets/SVG/logo-white-1.svg"/>
                 </div>
-                <span onclick="openNav()" class="burger-menu">&#9776;</span>
-                <nav id="sidenav" class="main-nav">
-                <div class="nav-left">
-                <a href="#"> <span class="closebtn" onclick="closeNav()">&times;</span></a>
-        <a href="#about">About</a>
-       <a href="#how">How to apply</a>
-        <a href="#contact">Contact</a>
-        <a href="#collaborate" class="cv-btn">Collaborate</a></div>
-   </nav>
-            </header>
---->
+                <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
 
-            <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/188996243?autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&autohide=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-            </iframe>
-            </div>
+        <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+            <li><a href="#how">How to apply</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#collaborate" class="cv-btn">Collaborate</a></li>
+        </ul>
+        </nav>
+</header>
 
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/338862609?autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&autohide=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+            <video autoplay muted loop>
+                <source src="assets/bg-video.mp4" type="video/mp4">
+            </video>
 
 </section>
 
@@ -306,17 +310,18 @@ SELECT APPLICANTS </div>
         </div>
     </div>
     <div class="center">
-    <img class="thunder-icon" src="assets/SVG/thunder-icon-white.svg" alt="">
+    <img class="thunder-icon-white" src="assets/SVG/thunder-icon-white.svg" alt="">
     <p class="copyrights"> © Girls Are Awesome 2019</p>
     </div>
     <div class="left">
-        <h2 class="contact-title">Contact</h2>
+       <div class="contact-center">
         <p class="contact-content">
         <i class="fas fa-map-marker-alt"></i>
         Enghavej 40, 1647 Copenhagen </p>
         <p class="contact-content">
         <i class="fas fa-envelope"></i>
     hello@girlsareawesome.com</p>
+    </div>
     </div>
 </footer>
 
@@ -328,7 +333,6 @@ SELECT APPLICANTS </div>
 
 </body>
 <script src="js/script.js"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
