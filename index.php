@@ -72,8 +72,6 @@ if(filter_has_var(INPUT_POST, 'submit')){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Girls Are Awesome</title>
@@ -96,7 +94,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 <!---
             <header>
                 <div class="logo">
-                    <img src="assets/SVG/logo-white-1.svg" />
+                    <img src="assets/SVG/logo-white-1.svg"/>
                 </div>
                 <span onclick="openNav()" class="burger-menu">&#9776;</span>
                 <nav id="sidenav" class="main-nav">
@@ -114,6 +112,8 @@ if(filter_has_var(INPUT_POST, 'submit')){
             <iframe src="https://player.vimeo.com/video/188996243?autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&autohide=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
             </iframe>
             </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/338862609?autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&autohide=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 </section>
 
@@ -296,7 +296,29 @@ SELECT APPLICANTS </div>
 
 </section>
 
-
+<footer>
+    <div class="right">
+    <img src="assets/SVG/logo-white-2.svg" alt="">
+    <div class="fabs">
+    <a href="https://www.facebook.com/girlsawesome"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/company/girls-are-awesome/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/girlsareawesome/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="center">
+    <img class="thunder-icon" src="assets/SVG/thunder-icon-white.svg" alt="">
+    <p class="copyrights"> © Girls Are Awesome 2019</p>
+    </div>
+    <div class="left">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-content">
+        <i class="fas fa-map-marker-alt"></i>
+        Enghavej 40, 1647 Copenhagen </p>
+        <p class="contact-content">
+        <i class="fas fa-envelope"></i>
+    hello@girlsareawesome.com</p>
+    </div>
+</footer>
 
 
 

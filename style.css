@@ -138,7 +138,6 @@ padding-top: 2px;
 
 .container div:nth-child(1) {
         background-image: url(assets/first-image.png);
-    background-color: #FEDC34;
 
          grid-column: 1/ span 2;
         grid-row: 1/ span 13;
@@ -175,7 +174,7 @@ padding-top: 2px;
 /****BENEFITS SECTION *****/
 
 .benefits-section {
-    background-color: #FEDC34;
+
     overflow: hidden;
 
 }
@@ -356,10 +355,10 @@ margin: -20px 0;
 
 
 /****FEATURED SECTION *****/
-
 .featured-section {
-    height: 100vh;
+    height: auto;
 }
+
 .banner {
     width: 100%;
     padding: 0 0 5em 0;
@@ -442,7 +441,6 @@ margin: -20px 0;
 /******** COLLABORATE SECTION *******/
 
 .collaborate-section {
- background-color: #FF5859;
  overflow: hidden;
 height: 1040px;
 
@@ -458,7 +456,7 @@ height: 1040px;
    display: block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size:contain;
     max-width: 100vw;
     max-height: 55vh;
 
@@ -584,6 +582,76 @@ input[type=text]:focus, textarea:focus {
 }
 
 
+/****** FOOTER SECTION ******/
+
+
+footer {
+    display: grid;
+    width: 100%;
+    padding: 1em;
+    padding-top: 2.5em;
+    background-color: #FF5859;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.right {
+    grid-column: 1/ span 2;
+    grid-row: 1/span 2;
+     text-align: center;
+}
+
+.left {
+    grid-column: 1/span 2;
+    grid-row: 4/ span 3;
+     text-align: center;
+
+}
+
+.center {
+    grid-column: 1/span 2;
+    grid-row: 8/ span 2;
+     text-align: center;
+}
+
+.right img {
+    width: 50%;
+}
+
+.center img {
+    width: 5%;
+}
+
+
+.fab{
+    color: #fff;
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+    opacity: 1;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.fab:hover {
+    opacity: 0.5;}
+
+
+.contact-title {
+    display: none;
+}
+
+.copyrights {
+    padding-top: 2em;
+}
+
+.contact-content {
+    padding: 10px;
+}
+
+.fas {
+    padding-right: 5px;
+}
+
 /****************** TABLET **************************/
 
 @media only screen and (min-width: 30em) {
@@ -670,6 +738,18 @@ input[type=text]:focus, textarea:focus {
     .form-group:nth-child(1) {
         margin-top: 1em;
     }
+
+
+    /****** FOOTER SECTION ******/
+
+footer {
+    display: grid;
+    background-color: #FF5859;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
 
 
 }
@@ -983,6 +1063,9 @@ nav .cv-btn{
     .collaborate-image {
 
     }
+
+
+    /****** FOOTER SECTION ******/
 
 
 }
