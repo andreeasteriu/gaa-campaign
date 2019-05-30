@@ -93,18 +93,19 @@ if(filter_has_var(INPUT_POST, 'submit')){
 <section id="header">
 
 <header>
-                <div class="logo">
+
+<nav>
+       <div class="logo">
                     <img src="assets/SVG/logo-white-1.svg"/>
                 </div>
-                <nav>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+            <div class="hamburger">
+                <div class="line bar1"></div>
+                <div class="line bar2"></div>
+                <div class="line bar3"></div>
+            </div>
 
         <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#how">How to apply</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#collaborate" class="cv-btn">Collaborate</a></li>

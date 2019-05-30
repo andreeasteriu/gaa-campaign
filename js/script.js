@@ -4,11 +4,15 @@ const links = document.querySelector('.nav-links li');
 
 
 hamburger.addEventListener('click',() => {
-  navLinks.classList.toggle('open');  links.forEach(link => {
-      link.classList.toggle('fade');
-  });
+  navLinks.classList.toggle("open");
+    hamburger.classList.toggle("fixed");
+
+});
 
 
+  $(".bar1").toggleClass("active");
+  $(".bar2").toggleClass("active");
+  $(".bar3").toggleClass("active");
 });
 
 /*

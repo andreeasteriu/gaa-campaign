@@ -37,9 +37,11 @@ img {
 /**** HEADER SECTION ****/
 
 .logo img {
-    width: 20%;
-    position: absolute;
+    width: 30%;
+   position: absolute;
 }
+
+
 
 header{
     width: 100vw;
@@ -61,21 +63,55 @@ video {
     height: 3px;
     background: #FFF;
     margin: 5px;
+    border-radius: 15px;
+    -webkit-transition: all 0.2s ease-in;
+  -webkit-transform: rotate(0deg);
 }
 nav {
     position: relative;
 }
 
+.bar2{
+	top:20px;
+}
+.bar3{
+	top:40px;
+}
+
+.bar1.active{
+	top:38px;
+  -webkit-transform: rotate(-135deg);
+  -webkit-transition: all 0.2s ease-in;
+}
+.bar2.active{
+	left:100px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in;
+
+}
+.bar3.active{
+	top:38px;
+
+  -webkit-transform: rotate(135deg);
+  -webkit-transition: all 0.2s ease-in;
+}
+
 .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%,-50%);
+    right: 1%;
+    top: 1.5%;
+    transform: translate(-1%,-2%);
     z-index: 2;
 }
 
+
 .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
     position: fixed;
     top: 0;
     right: 0;
@@ -83,8 +119,8 @@ nav {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(80px at 90% -10%);
-    -webkit-clip-path: circle(80px at 90% -10%);
+    clip-path: circle(70px at 90% -10%);
+    -webkit-clip-path: circle(70px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
 }
@@ -95,27 +131,21 @@ nav {
     pointer-events: all;
 }
 
-.nav-links li {
-    opacity: 0;
-}
 
-nav-links li a {
+
+.nav-links li a {
     font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
 }
 
-.nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
-}
-.nav-links li:nth-child(2) {
-     transition: all 0.5s ease 0.4s;
-}
-.nav-links li:nth-child(3) {
-     transition: all 0.5s ease 0.6s;
+.fixed {
+    position: fixed !important;
+    right: 2em;
+    top: 1.5em;
 }
 
-li.fade {
-    opacity: 1;
-}
+
 
 /****DESCRIPTION SECTION MOBILE****/
 
@@ -613,10 +643,12 @@ footer {
 
 .right img {
     width: 50%;
+    margin: auto;
 }
 
 .center img {
     width: 5%;
+    margin: auto;
 }
 
 
@@ -648,6 +680,11 @@ footer {
 .fas {
     padding-right: 5px;
 }
+
+
+
+
+
 
 /****************** TABLET **************************/
 
@@ -808,10 +845,7 @@ footer {
     }
 
 
-    .main-nav {
-            position: absolute;
-        transition: top 0.5s;
-    }
+
 /**** HEADER SECTION ****/
 
 .logo img {
@@ -829,7 +863,7 @@ footer {
 
     nav {
         height: 10vh;
-        background: transparent;
+
     }
 
     .nav-links {
