@@ -281,10 +281,11 @@ SELECT APPLICANTS </div>
 <section class="collaborate-section">
 
 <div class="collaborate-image">
+<img src="assets/BOLD-LETTERS-02.png" alt="">
 </div>
 
 <div class="form-wrapper">
-    <h1 class="title-collaborate">COLLABORATE<br><span class="stroke">WITH US</span></h1>
+    <h1 class="title-collaborate">COLLABORATE<br><span class="stroke-collaborate">WITH US</span></h1>
 <div class="form-container">
  <?php if($msg != ''): ?>
  <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
@@ -305,7 +306,7 @@ SELECT APPLICANTS </div>
      <textarea name="message" class="form-control" rows="5" cols="50"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
       </div>
       <br>
-      <button  type="submit" name="submit" class="btn-form"><h3>SUBMIT</h3></button>
+      <button  type="submit" name="submit" class="btn-form"><h3>Submit</h3></button>
   </form>
    </div>
 
@@ -317,7 +318,25 @@ SELECT APPLICANTS </div>
 
 <section class="featured-section">
 
-   <img class="banner" src="assets/SVG/gaa-banner.svg" alt="">
+  <div class="how-banner">
+        <section>
+         <div class="group">
+    <div class="row">
+      <span class="black-text-benefits">FEATURED</span>
+     <span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span>
+     <span class="black-text-benefits">FEATURED</span>
+     <span class="black-text-benefits">FEATURED</span>
+      <span class="extra-hows black-text-benefits">FEATURED</span>
+      <span class="extra-hows black-text-benefits">FEATURED</span>
+        <span class="extra-hows black-text-benefits">FEATURED</span>
+        <span class="extra-hows black-text-benefits">FEATURED</span>
+
+
+
+    </div>
+</div>
+</section>
+</div>
 
      <div class="carousel">
     <div class="carousel-track-container">
@@ -327,8 +346,6 @@ SELECT APPLICANTS </div>
             <li class="carousel-slide"><img classs="carousel-image"src="assets/tess3.png" alt=""></li>
         </ul>
     </div>
-
-
 
 
 
