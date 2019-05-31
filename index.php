@@ -99,9 +99,9 @@ if(filter_has_var(INPUT_POST, 'submit')){
                     <img src="assets/SVG/logo-white-1.svg"/>
                 </div>
             <div class="hamburger">
-                <div class="line bar1"></div>
-                <div class="line bar2"></div>
-                <div class="line bar3"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
 
         <ul class="nav-links">
@@ -115,38 +115,39 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
 
 
-
-            <video autoplay muted loop>
+        <video class="video1" autoplay muted loop>
+                <source src="assets/Mobile-bg-video.mp4">
+            </video>
+            <video class="video2" autoplay muted loop>
                 <source src="assets/bg-video.mp4" type="video/mp4">
             </video>
+
 
 </section>
 
 
 <section class="description">
   <div class="container">
-   <div></div>
-   <div><h1><span class="stroke">TIME TO MAKE A </span>CHANGE.</h1></div>
-   <div><p>Our goal is to help all female artists: painters, musicians, dancers, designers, photographers and all the creatives mind, to turn their passions and inspire the community.</p>
-<p>We identify bold talents and brilliant people who stands for their work.</p>
 
-<p>We recognise and encourage great talents to grow and pursue inspiring the world with their creations.</p>
+     <!--- DIV 1 --->
+      <div><video autoplay muted loop>
 
-<p>We strive to empower talented women and their artistic creations.</p>
+       <source src="assets/video_section_About.mp4" type="video/mp4">
+   </video></div>
+   <!--- DIV 2 --->
+   <div><h1 class="change-text"><span class="stroke">TIME TO MAKE A </span>CHANGE.</h1></div>
+   <!--- DIV 3 --->
+   <div><p class="desc-text">Our goal is to help all female artists: painters, musicians, dancers, designers, photographers and all the creatives mind, to turn their passions and inspire the community.</p>
+   <br>
+<p class="desc-text">We identify bold talents and brilliant people who stands for their work.</p>
+<br>
+<p class="desc-text">We recognise and encourage great talents to grow and pursue inspiring the world with their creations.</p>
+<h2 class="text-question">WHAT IS YOUR TALENT?</h2>
   <img class="thunder-icon" src="assets/SVG/thunder-icon.svg" alt=""></div>
+  <!--- DIV 4 --->
    <div></div>
-    <div class="benefits-section">
-    <span class="benefits-text">
-       <h1>BENEFITS</h1>
-        <p>Exposure to our community of 70,000 + users</p>
-        <p>Share your story</p>
-        <p>Create an impact</p>
-        <p>Inspire the community</p>
-    </span>
-    <span class="benefits-image">
 
-    </span>
-    </div>
+
 </div>
 </section>
 
@@ -204,14 +205,14 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
   <div class="slide slide1">
    <div class="slide-content">
-    <div class="text">CREATE A RAD PORTFOLIO!<br> SUBMIT IT!</div>
+    <div class="text">CREATE A RAD PORTFOLIO &<br> SUBMIT IT!</div>
     <div class="numbertext stroke"><h1>1</h1></div>
       </div>
   </div>
 
   <div class="slide slide2">
   <div class="slide-content">
-    <div class="text">WE'LL LINK THE PIECES TOGETHER!
+    <div class="text">WE'LL LINK THE PIECES TOGETHER!<br>
 SELECT APPLICANTS </div>
     <div class="numbertext stroke"><h1>2</h1></div>
       </div>
@@ -227,12 +228,55 @@ SELECT APPLICANTS </div>
  </div>
   <!-- Next buttons -->
 
-  <a class="how-next-button"><p class="small-next">Next!</p><img src="assets/SVG/how-next-button.svg" alt=""></a>
+  <a class="how-next-button"><p class="small-next">Next</p><img src="assets/SVG/how-next-button.svg" alt=""></a>
 
 </div>
 </section>
 
 
+<section class="benefits-section">
+  <div class="how-banner">
+        <section>
+         <div class="group">
+    <div class="row">
+      <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+     <span class="black-text-benefits">BENEFITS</span>
+      <span class="extra-hows black-text-benefits">BENEFITS</span>
+       <span class="extra-hows black-text-benefits">BENEFITS</span>
+        <span class="extra-hows black-text-benefits">BENEFITS</span>
+        <span class="extra-hows black-text-benefits">BENEFITS</span>
+
+
+    </div>
+</div>
+</section>
+</div>
+
+    <div class="benefits-text">
+        <div class="benefits-center-text">
+        <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Let your work speak</p>
+        <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Share your story</p>
+        <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Create an impact</p>
+        <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Inspire the community</p>
+        <img class="thunder-benefits" src="assets/SVG/thunder-icon.svg" alt="">
+        </div>
+    </div>
+    <div class="benefits-image">
+        <img src="assets/SVG/family-girl.svg" alt="">
+    </div>
+    </section>
 
 <section class="collaborate-section">
 
@@ -278,9 +322,9 @@ SELECT APPLICANTS </div>
      <div class="carousel">
     <div class="carousel-track-container">
         <ul class="carousel-track">
-            <li class="carousel-slide current-slide"><img classs="carousel-image"src="assets/tess5.jpg" alt=""></li>
-            <li class="carousel-slide"><img classs="carousel-image"src="assets/tess6.jpg" alt=""></li>
-            <li class="carousel-slide"><img classs="carousel-image"src="assets/tess7.jpg" alt=""></li>
+            <li class="carousel-slide current-slide"><img classs="carousel-image"src="assets/tess1.png" alt=""></li>
+            <li class="carousel-slide"><img classs="carousel-image"src="assets/tess2.png" alt=""></li>
+            <li class="carousel-slide"><img classs="carousel-image"src="assets/tess3.png" alt=""></li>
         </ul>
     </div>
 
