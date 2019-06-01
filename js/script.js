@@ -121,7 +121,6 @@ let hoverNext = document.querySelector('.how-next-button');
 
 hoverNext.addEventListener('hover',a =>{
 
-})
-
+});
 
 

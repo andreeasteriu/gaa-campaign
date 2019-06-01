@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -98,7 +102,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+      justify-content: space-evenly;
     align-items: center;
     margin-left: auto;
     position: fixed;
@@ -795,6 +799,19 @@ footer {
 /****************** TABLET **************************/
 
 @media only screen and (min-width: 30em) {
+
+
+    /***** NAVIGATION ******/
+
+    .nav-links.open {
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    }
+
+    .nav-links li a {
+        font-size: 30px;
+    }
+
+
 
 /****DESCRIPTION SECTION TABLET****/
 

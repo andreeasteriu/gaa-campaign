@@ -126,7 +126,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 </section>
 
 
-<section class="description">
+<section id="about" class="description">
   <div class="container">
 
      <!--- DIV 1 --->
@@ -153,7 +153,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
 
 
-<section class="how-section">
+<section id="how" class="how-section">
     <div class="how-banner">
         <section>
          <div class="group">
@@ -278,7 +278,7 @@ SELECT APPLICANTS </div>
     </div>
     </section>
 
-<section class="collaborate-section">
+<section id="collaborate" class="collaborate-section">
 
 <div class="collaborate-image">
 <img src="assets/BOLD-LETTERS-02.png" alt="">
@@ -362,7 +362,7 @@ SELECT APPLICANTS </div>
 
 </section>
 
-<footer>
+<footer id="contact">
     <div class="right">
     <img src="assets/SVG/logo-white-2.svg" alt="">
     <div class="fabs">
