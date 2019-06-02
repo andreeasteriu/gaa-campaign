@@ -83,7 +83,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
     <link rel="stylesheet" href="https://use.typekit.net/ivf1pxl.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta name="description" content="Girls Are Awesome is a global platform for creative expression, portraying women who live their lives with style and strength. Through community, social initiatives and brand collaborations, GAA wants to inspire and empower women around the globe.">
-    <meta name="keywords" content=" ">
+    <meta name="keywords" content="girls,girls are awesome,awesome,campaign,talent,showcase,girl,woman,women,artist,featured,painter,writer,dancer,ballerina">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
