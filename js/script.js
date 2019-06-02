@@ -120,7 +120,7 @@ function scrollProgressBar() {
 const hamburger = document.querySelector('#menuToggle');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector("ul");
-const close = document.querySelector(".open");
+const closeInput = document.querySelector("input");
 
 hamburger.addEventListener('click',() => {
   navLinks.classList.toggle("open");
@@ -128,5 +128,6 @@ hamburger.addEventListener('click',() => {
 
 links.addEventListener('click',() => {
      navLinks.classList.remove("open");
+    closeInput.checked = false;
 });
 

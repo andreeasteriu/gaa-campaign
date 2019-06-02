@@ -119,8 +119,8 @@ if(filter_has_var(INPUT_POST, 'submit')){
         <header>
 
             <nav>
-                <div class="logo">
-                    <img src="assets/SVG/logo-white-1.svg" />
+                <div class="logo"><a href="">
+                    <img src="assets/SVG/logo-white-1.svg" /></a>
                 </div>
                 <div id="menuToggle">
                     <input type="checkbox" />
