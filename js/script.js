@@ -1,16 +1,4 @@
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelector("ul");
 
-hamburger.addEventListener('click',() => {
-  navLinks.classList.toggle("open");
-    hamburger.classList.toggle("fixed");
-});
-
-links.addEventListener('click',() => {
-
-    navLinks.classList.toggle("open");                 hamburger.classList.toggle("fixed");
-});
 
 
 
@@ -105,11 +93,6 @@ arrowRight.addEventListener('click', function(){
 startSlide();
 
 
-let hoverNext = document.querySelector('.how-next-button');
-
-hoverNext.addEventListener('hover',a =>{
-
-});
 
 
 $(window).on('load',function(){
@@ -131,5 +114,19 @@ function scrollProgressBar() {
 };
 
 
-// Slide down animations
+
+// BURGER MENU
+
+const hamburger = document.querySelector('#menuToggle');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelector("ul");
+const close = document.querySelector(".open");
+
+hamburger.addEventListener('click',() => {
+  navLinks.classList.toggle("open");
+});
+
+links.addEventListener('click',() => {
+     navLinks.classList.remove("open");
+});
 

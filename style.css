@@ -232,32 +232,110 @@ video {
 
 /***** NAVIGATION *****/
 
-.line {
-    width: 30px;
-    height: 3px;
-    background: #FFF;
-    margin: 5px;
-    border-radius: 15px;
-    -webkit-transition: all 0.2s ease-in;
-  -webkit-transform: rotate(0deg);
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
 }
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #FFF;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:nth-child(1)
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+
+ transform: rotate(-45deg) translate(0, -1px);
+  background: #FFF;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-child(2)
+{
+  opacity: 1;
+   transform: rotate(45deg) translate(-3px, -3px);
+}
+
 nav {
     position: relative;
+    width: 100%;
 }
 
-
-
-.hamburger {
-    position: absolute;
-    cursor: pointer;
-    right: 1%;
-    top: 1.5%;
-    transform: translate(-1%,-2%);
-    z-index: 2;
-}
 
 
 .nav-links {
+      display: none;
+
+}
+
+.nav-links.open {
     display: flex;
     list-style: none;
       justify-content: space-evenly;
@@ -267,19 +345,11 @@ nav {
     top: 0;
     right: 0;
     background: #FF5859;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(0px at 90% -10%);
-    -webkit-clip-path: circle(0px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 1s ease-in-out;
     pointer-events: none;
-}
-
-.nav-links.open {
-     clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
 }
 
 
@@ -288,15 +358,18 @@ nav {
     font-size: 25px;
     color: #FFF;
     text-decoration: none;
+    pointer-events: all;
 }
 
-
+.close {
+    display: none;
+}
 
 
 .fixed {
     position: fixed !important;
-    right: 2em;
-    top: 1.5em;
+    right: 1%;
+    top: 1.5%;
 }
 
 
@@ -309,7 +382,6 @@ nav {
     grid-template-rows:  12em 25em 21em;
     max-width: 600px !important;
     width: 100%;
-
     margin-right: auto;
     margin-left: auto;
     padding: 0;
@@ -363,6 +435,7 @@ nav {
 
 .change-text {
     color: #707070;
+    overflow: hidden;
 }
 
 .stroke-collaborate{
@@ -1038,7 +1111,6 @@ footer {
     /***** NAVIGATION ******/
 
     .nav-links.open {
-    -webkit-clip-path: circle(1500px at 90% -10%);
     }
 
     .nav-links li a {
@@ -1361,19 +1433,11 @@ footer {
     display: none;
 }
 
-.hamburger {
+#menuToggle {
    display: none;
 }
 
-    .nav-links {
-        display: flex;
-        list-style: none;
-        width: 50%;
-        height: 100%;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: auto;
-    }
+
 
 .nav-links {
     display: flex;
@@ -1386,8 +1450,6 @@ footer {
      width: 50%;
         height: 100%;
     flex-direction: row;
-    clip-path: none;
-    -webkit-clip-path: none;
     transition: auto;
     pointer-events: auto;
     font-weight: bold;

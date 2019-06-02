@@ -122,10 +122,11 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 <div class="logo">
                     <img src="assets/SVG/logo-white-1.svg" />
                 </div>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
                 <ul class="nav-links">
@@ -134,6 +135,8 @@ if(filter_has_var(INPUT_POST, 'submit')){
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#collaborate" class="cv-btn">Collaborate</a></li>
                 </ul>
+
+
             </nav>
         </header>
 
