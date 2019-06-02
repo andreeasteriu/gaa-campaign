@@ -1,29 +1,17 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const links = document.querySelector('.nav-links li');
-
+const links = document.querySelector("ul");
 
 hamburger.addEventListener('click',() => {
   navLinks.classList.toggle("open");
     hamburger.classList.toggle("fixed");
-
 });
 
+links.addEventListener('click',() => {
 
+    navLinks.classList.toggle("open");                 hamburger.classList.toggle("fixed");
+});
 
-
-/*
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("sidenav").style.top = "0";
-  } else {
-    document.getElementById("sidenav").style.top = "-90px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-*/
 
 
 
@@ -123,4 +111,25 @@ hoverNext.addEventListener('hover',a =>{
 
 });
 
+
+$(window).on('load',function(){
+    $('.preloader').addClass('complete');
+
+ });
+
+
+// When the user scrolls the page, execute scrollProgressBar
+window.onscroll = function() {
+    scrollProgressBar()
+};
+
+function scrollProgressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+};
+
+
+// Slide down animations
 

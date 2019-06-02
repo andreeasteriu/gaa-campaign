@@ -16,6 +16,134 @@ body {
     font-family: "Sofia Pro", sans-serif;
 	}
 
+/**** PAGE LOAD ANIMATION ****/
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  align-self: center;
+    justify-content: center;
+    margin: auto;
+    top: 50vh;
+
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+    z-index: 4000;
+}
+
+
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #FFF;
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   z-index: 2000;
+    transition: 1s;
+}
+
+.preloader.complete {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.preloader:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #FF5859;
+    transition: 1s;
+}
+
+.preloader.complete:before {
+    left: -50%;
+}
+
+.preloader:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #FF5859;
+    transition: 1s;
+    z-index: 2000;
+}
+
+.preloader.complete:after {
+    right: -50%;
+}
+
+/*** SCROLL PROGRESS BAR ***/
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #FF5859;
+  width: 0%;
+}
+
+
+
 .text-question {
     color: #FF5859;
     text-align: center;
@@ -26,6 +154,14 @@ color: #707070;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
     }
+
+section .group .row span:hover {
+    color: #fff;
+}
+
+section .group .row span.black-text-benefits:hover {
+    color: #707070;
+}
 
 h1 {
     font-size:2.2em;
@@ -65,14 +201,34 @@ header{
 
 video {
     width: 100%;
+
 }
 
 .video2 {
     display: none;
+
 }
 
+#header {
+    position: relative;
+}
 
+.campaign-slogan {
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+    color: #fff;
+}
 
+.campaign-message {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+
+.messages h3 {
+    font-size: .9em;
+    padding-bottom: .5em;
+}
 
 /***** NAVIGATION *****/
 
@@ -133,6 +289,9 @@ nav {
     color: #FFF;
     text-decoration: none;
 }
+
+
+
 
 .fixed {
     position: fixed !important;
@@ -512,10 +671,21 @@ display: grid;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+}
+
+.carousel-text {
+    z-index: 2;
+    color: #FFF;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .carousel-track-container {
-    background: lightgreen;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -541,7 +711,12 @@ display: grid;
     background: transparent;
     border: none;
     padding: 1em;
+    outline:0;
+    cursor: pointer;
+}
 
+.carousel-button:hover {
+    opacity: .5;
 }
 
 
@@ -578,6 +753,16 @@ display: grid;
  overflow: hidden;
 
 
+}
+
+.form-group input {
+    color: #FFF;
+    font-size: 14px;
+}
+
+textarea {
+    color: #FFF;
+    font-size: 14px;
 }
 
 h1.title-collaborate {
@@ -681,6 +866,7 @@ input[type=text]:focus, textarea:focus {
     border: 2px solid #FFF;
     border-radius: 50px;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
  .btn-form::before{
@@ -787,6 +973,12 @@ footer {
 .contact-content {
     padding: 10px 0;
     color: #FFF;
+
+}
+
+.contact-content a {
+     text-decoration: none;
+    color: #FFF;
 }
 
 .fas {
@@ -801,6 +993,46 @@ footer {
 /****************** TABLET **************************/
 
 @media only screen and (min-width: 30em) {
+
+    .campaign-slogan {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        width: 700px;
+        bottom: 7em;
+    }
+
+    .campaign-message {
+        font-size: 2em;
+        padding-bottom: 1em;
+        text-align: center;
+
+    }
+
+    .messages {
+        display: flex;
+        flex-direction: row;
+         font-size: 1.6em;
+            justify-content: space-evenly;
+
+
+    }
+
+    .messages h3 {
+        padding-bottom: 0;
+    }
+
+    .message-text {
+        border-right: 2px solid #FF4D4D;
+        padding: .2em .5em .2em 0;
+    }
+
+    .message-text:last-child {
+        border-right: none;
+    }
+
+
+
 
 
     /***** NAVIGATION ******/
@@ -920,7 +1152,7 @@ display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 10em 15em 467px;
     /*overflow: hidden;*/
-    max-width: 800px !important;
+    max-width: 1366px !important;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -950,7 +1182,7 @@ display: grid;
     }
 
     .benefits-image img {
-    width: 80%;
+    width: 612px;
         margin-right: 0;
 }
 
@@ -991,7 +1223,7 @@ display: grid;
     }
 
     .btn-form {
-        margin-top: 5em;
+        margin-top: 2em;
         width: 30%;
         padding: 12px 30px;
         font-size: 21px;
@@ -1029,7 +1261,8 @@ footer {
 .left {
     grid-column: 3/span 1;
     grid-row: 1/ span 2;
-     text-align: center;
+    align-self: center;
+    justify-self: center;
 
 }
 
@@ -1073,6 +1306,10 @@ footer {
 
     }
 
+    .campaign-slogan {
+           bottom: 70px;
+    }
+
     .thunder-icon {
         margin-top: 5em;
         width: 20px;
@@ -1090,6 +1327,7 @@ footer {
         text-align: center;
     }
 
+
 /**** HEADER SECTION ****/
 
 .logo img {
@@ -1099,6 +1337,7 @@ footer {
 
 .video2 {
     display: block;
+
 }
 
     .video1 {
@@ -1106,6 +1345,10 @@ footer {
     }
 
 /***** NAVIGATION *****/
+    .nav-links.open {
+        display: flex;
+         flex-direction: row;
+    }
 
     nav {
     height: 11vh;
@@ -1150,9 +1393,6 @@ footer {
     font-weight: bold;
 }
 
-.open {
-   display: none;
-}
 
 
 
@@ -1497,7 +1737,7 @@ margin-right: 2em;
     }
 
     .btn-form {
-        margin-top: 1em;
+        margin-top: 0;
        padding: 12px 50px;
     }
     /****** FOOTER SECTION ******/
