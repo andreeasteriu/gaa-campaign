@@ -79,11 +79,11 @@ if(filter_has_var(INPUT_POST, 'submit')){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <title>Girls are Awesome</title>
+    <title>Girls are Awesome Campaign - Empower Creative Women</title>
     <link rel="stylesheet" href="https://use.typekit.net/ivf1pxl.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <meta name="description" content="Girls Are Awesome is a global platform for creative expression, portraying women who live their lives with style and strength. Through community, social initiatives and brand collaborations, GAA wants to inspire and empower women around the globe.">
-    <meta name="keywords" content="girls,girls are awesome,awesome,campaign,talent,showcase,girl,woman,women,artist,featured,painter,writer,dancer,ballerina">
+    <meta name="description" content="Helping female artists and creative minds to inspire the community through their bold talents and empower brilliant women by recognising their value">
+    <meta name="keywords" content="girls,girls are awesome,awesome,campaign,talent,showcase,girl,woman,women,artist,featured,painter,writer,dancer,ballerina, bold, be featured, empower, empower women, talented women, brilliant women, woman empowerment campaign, collaborate">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -394,14 +394,14 @@ if(filter_has_var(INPUT_POST, 'submit')){
             <section>
                 <div class="group">
                     <div class="row">
-                        <span class="black-text-benefits">FEATURED</span>
-                        <span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span><span class="black-text-benefits">FEATURED</span>
-                        <span class="black-text-benefits">FEATURED</span>
-                        <span class="black-text-benefits">FEATURED</span>
-                        <span class="extra-hows black-text-benefits">FEATURED</span>
-                        <span class="extra-hows black-text-benefits">FEATURED</span>
-                        <span class="extra-hows black-text-benefits">FEATURED</span>
-                        <span class="extra-hows black-text-benefits">FEATURED</span>
+                        <span class="black-text-benefits">GET FEATURED</span>
+                        <span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span>
+
+
+                        <span class="extra-hows black-text-benefits">GET FEATURED</span>
+
+
+
 
 
 
