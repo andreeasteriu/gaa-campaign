@@ -1,7 +1,7 @@
 
 
 
-
+// FEATURED CAROUSEL
 
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
@@ -41,7 +41,7 @@ prevButton.addEventListener('click', e => {
 });
 
 
-// when I click right, it does to the right
+// when I click right, it goes to the right
 
 nextButton.addEventListener('click', e => {
 
@@ -53,8 +53,11 @@ nextButton.addEventListener('click', e => {
 
 
 
+// HoW SECTION CAROUSEL
 
-let sliderImages = document.querySelectorAll('.slide'),
+
+
+let sliderImages = document.querySelectorAll('.carousel-slide'),
          arrowRight = document.querySelector('.how-next-button'),
         current = 0;
 

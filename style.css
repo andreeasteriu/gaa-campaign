@@ -1065,7 +1065,12 @@ footer {
 
 /****************** TABLET **************************/
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 480px) {
+
+    .centered-copyright{
+        display: flex;
+        justify-content: center;
+    }
 
     .campaign-slogan {
         text-align: center;
@@ -1304,7 +1309,7 @@ display: grid;
     /****** FEATURED SECTION ******/
 
     .featured-section {
-    height: 100vh;
+/*    height: 100vh;*/
 }
 
     .carousel {
@@ -1312,6 +1317,11 @@ display: grid;
     height: 600px;
     width: 90%;
     margin: 4em auto 10em;
+    }
+
+    .carousel-track-container {
+        max-width: 70vw;
+    margin: auto;
     }
 
     /****** FOOTER SECTION ******/
@@ -1367,7 +1377,7 @@ footer {
 
 /***************** DESKTOP ***********************/
 
-@media only screen and (min-width:64em) {
+@media only screen and (min-width:1025px) {
 
     h1 {
         font-size: 5em;

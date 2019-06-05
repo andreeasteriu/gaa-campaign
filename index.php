@@ -5,8 +5,6 @@ $msg = '';
 $msgClass = '';
 // Check for submit
 
-
-
 if(filter_has_var(INPUT_POST, 'submit')){
     // Get Form Data
     $name = htmlspecialchars($_POST['name']);
@@ -15,12 +13,12 @@ if(filter_has_var(INPUT_POST, 'submit')){
   if(isset($_POST['url'])){
     $url = $_POST['url'];
 }
-
-
     // Check Required Fields
     if (!empty($email) && !empty($name) && !empty($message) && !empty($url)){
         //Passed
         // Check Email
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
         if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
             //Failed
         $msg = 'Please use a valid email';
@@ -52,19 +50,12 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 $msg = 'Your email was not sent';
                 $msgClass = 'alert-danger';
             }
-
         }
-
     } else {
         //Failed
-
         $msg = 'please fill in all fields';
         $msgClass = 'alert-danger';
-
     }
-
-
-
 }
 
 ?>
@@ -457,7 +448,10 @@ if(filter_has_var(INPUT_POST, 'submit')){
         </div>
         <div class="center">
             <img class="thunder-icon-white" src="assets/SVG/thunder-icon-white.svg" alt="">
-            <p class="copyrights"> © Girls Are Awesome 2019</p>
+            <div class="centered-copyright">
+                <p class="copyrights"> © Girls Are Awesome 2019</p>
+            </div>
+
         </div>
         <div class="left">
             <div class="contact-center">
