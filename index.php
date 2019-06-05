@@ -162,7 +162,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
         <div class="container">
 
             <!--- DIV 1 --->
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" class="gif-video">
                    <video autoplay muted loop>
                     <source src="assets/video_section_About.mp4" type="video/mp4">
                 </video>
@@ -330,6 +330,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
         </div>
 
         <div class="form-wrapper">
+
             <h1 class="title-collaborate">COLLABORATE<br><span class="stroke-collaborate">WITH US</span></h1>
 
 

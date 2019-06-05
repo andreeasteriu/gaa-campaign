@@ -57,7 +57,7 @@ nextButton.addEventListener('click', e => {
 
 
 
-let sliderImages = document.querySelectorAll('.carousel-slide'),
+let sliderImages = document.querySelectorAll('.slide'),
          arrowRight = document.querySelector('.how-next-button'),
         current = 0;
 

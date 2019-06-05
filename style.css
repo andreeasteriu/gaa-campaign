@@ -188,7 +188,10 @@ img {
    position: absolute;
 }
 
-
+#header{
+    height: 100vh;
+    overflow: hidden;
+}
 
 header{
     width: 100vw;
@@ -201,6 +204,8 @@ header{
 
 video {
     width: 100%;
+    object-fit: cover;
+    height: 100vh;
 
 }
 
@@ -438,10 +443,9 @@ nav {
     overflow: hidden;
 }
 
-.stroke-collaborate{
-
+.gif-video video{
+ height: auto;
 }
-
 /***** HOW SECTION *******/
 
 
@@ -449,6 +453,7 @@ nav {
     position: absolute;
 width: 100%;
     z-index: 2;
+
 }
 
 
@@ -622,6 +627,7 @@ display: grid;
     padding: 0;
     margin: 0;
     justify-content: center;
+/*      overflow-x: hidden;*/
 
 
 }
@@ -649,6 +655,7 @@ display: grid;
      grid-column: 1/span 2;
     grid-row: 3/span 1;
     width: 100%;
+    overflow: hidden;
 
       background-size: cover;
     background-position: top;
@@ -1552,7 +1559,7 @@ a.cv-btn{ !important
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 10em 7em 15em 20em;
         margin-top: 5em;
-        max-width: 2560px !important;
+        max-width: 1800px !important;
         width: 100%;
         min-height: 100%;
         margin-left: auto;
@@ -1664,6 +1671,7 @@ display: grid;
         padding-top: 0;
         margin-top: -2em;
          z-index: 3;
+         overflow:visible;
 
     }
 
@@ -1794,6 +1802,9 @@ margin-right: 2em;
       margin-right: 3em;
         height: 100vh;
         padding: 4em 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .collaborate-image {
