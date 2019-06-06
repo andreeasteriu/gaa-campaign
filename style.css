@@ -729,6 +729,24 @@ display: grid;
     }
 }
 /****FEATURED SECTION *****/
+
+.carousel-slide a{
+    cursor: pointer;
+}
+
+.read-more {
+    padding-top: 2em;
+    color: #FFF;
+    font-size: 15px;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.read-more:hover {
+    border-bottom: 1px;
+    transition: 1s ease;
+}
+
 .featured-section {
     height: auto;
 }
@@ -762,6 +780,8 @@ display: grid;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
+    line-height: 1.5;
 
 }
 
@@ -851,6 +871,7 @@ h1.title-collaborate {
 }
 
 h4 {
+    font-size: 18px;
     color: #FFF;
 }
 
@@ -1059,6 +1080,7 @@ footer {
 .contact-content a {
      text-decoration: none;
     color: #FFF;
+    font-size: 14px;
 }
 
 .fas {
@@ -1651,6 +1673,7 @@ display: grid;
         grid-column: 1/ span 1;
          grid-row: 2/span 1;
         padding-left: 5em;
+        z-index: 4;
     }
 
     .benefits-center-text {
@@ -1821,7 +1844,7 @@ margin-right: 2em;
     }
 
     .collaborate-image img{
-        width: 80%;
+      width: 100%;
         margin-right: -1em;
         z-index: 2;
     }

@@ -328,7 +328,7 @@ OUR CREW </div>
     <section id="collaborate" class="collaborate-section">
 
         <div class="collaborate-image">
-            <img src="assets/BOLD-LETTERS-02.png" alt="">
+            <img src="assets/BOLD-LETTERS-2.png" alt="">
         </div>
 
         <div class="form-wrapper">
@@ -408,22 +408,23 @@ OUR CREW </div>
             <div class="carousel-track-container">
                 <ul class="carousel-track">
 
-                    <li class="carousel-slide current-slide">
-                        <img classs="carousel-image" src="assets/tess1.png" alt="">
-                        <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”</h2>
-                        <a href="">Read the article</a>
+                    <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio">
+                        <img classs="carousel-image" src="assets/photography.png" alt="">
+                        <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”<br><br><p class="read-more">Read the article</p></h2>
+                        </a>
                     </li>
 
-                    <li class="carousel-slide">
-                        <img classs="carousel-image" src="assets/tess2.png" alt="">
-                        <h2 class="carousel-text">“Have the confidence to do it yourself.”</h2>
-                        <a href="">Read the article</a>
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life">
+                        <img classs="carousel-image" src="assets/singer.png" alt="">
+                        <h2 class="carousel-text">“Have the confidence to do it yourself.”<br><br><p class="read-more">Read the article</p></h2>
+                        </a>
                     </li>
 
-                    <li class="carousel-slide">
-                        <img classs="carousel-image" src="assets/tess3.png" alt="">
-                        <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”
-</h2><a href="">Read the article</a>
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music">
+                        <img classs="carousel-image" src="assets/harp.png" alt="">
+                        <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”<br><br>
+                        <p class="read-more">Read the article</p></h2>
+                        </a>
                     </li>
 
                 </ul>

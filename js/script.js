@@ -134,3 +134,8 @@ links.addEventListener('click',() => {
     closeInput.checked = false;
 });
 
+/*
+const readMore = document.querySelector('.carousel-image');
+readMore.addEventListener("mouseover",showReadMore => {
+    document.getElementsByClassName('read-more').style.opacity = "0";
+});*/
