@@ -928,13 +928,13 @@ input[type=text]:focus, textarea:focus {
     margin: auto;
    display:block;
     width: 50%;
-    background: #707070;
+    background: #FF5859;
     font-size: 15px;
     font-weight: 100;
     vertical-align: middle;
     position: relative;
     z-index: 1;
-    padding: 10px;
+    padding: 12px 30px;
     position: relative;
     -webkit-backface-visibility: hidden;
     overflow: hidden;
@@ -943,10 +943,10 @@ input[type=text]:focus, textarea:focus {
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     color: #FFF;
-    border: 2px solid #FFF;
     border-radius: 50px;
     transition: all 0.5s;
     cursor: pointer;
+    border: none;
 }
 
  .btn-form::before{
@@ -1133,7 +1133,9 @@ footer {
 
 /****DESCRIPTION SECTION TABLET****/
 
-
+    #about {
+        overflow: hidden;
+    }
 
 .container {
     display: grid;
@@ -1145,6 +1147,8 @@ footer {
     margin-right: auto;
     margin-left: auto;
     margin-top: 5em;
+    overflow: hidden;
+
 }
 
     h1.change-text {
@@ -1307,8 +1311,8 @@ display: grid;
     }
 
     .btn-form {
-        margin-top: 2em;
-        width: 30%;
+        margin-top: 1em;
+
         padding: 12px 30px;
         font-size: 21px;
     }
@@ -1396,7 +1400,11 @@ footer {
     }
 
     .campaign-slogan {
-           bottom: 70px;
+           bottom: 18px;
+    }
+
+    .campaign-message {
+        display: none;
     }
 
     .thunder-icon {
@@ -1464,7 +1472,7 @@ footer {
     margin-left: auto;
     position: static;
     background: transparent;
-     width: 50%;
+     width: 60%;
         height: 100%;
     flex-direction: row;
     transition: auto;
@@ -1490,9 +1498,8 @@ footer {
 
   a.cv-btn{
     display: inline-block;
-     border: 2px solid #FFF;
 /*    width: 100px;*/
-    background: none;
+    background: #FF5859;
     border-radius: 30px;
     vertical-align: middle;
     position: relative;
@@ -1821,7 +1828,7 @@ margin-right: 2em;
 
     .btn-form {
         margin-top: 0;
-       padding: 12px 50px;
+       padding: 10px 50px;
     }
     /****** FOOTER SECTION ******/
 

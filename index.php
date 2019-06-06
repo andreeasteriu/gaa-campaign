@@ -121,8 +121,9 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 </div>
 
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">The campaign</a></li>
                     <li><a href="#how">How to apply</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#collaborate" class="cv-btn">Collaborate</a></li>
                 </ul>
@@ -138,7 +139,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
             <source src="assets/Mobile-bg-video.mp4">
         </video>
         <video class="video2" autoplay muted loop>
-            <source src="assets/bg-video.mp4" type="video/mp4">
+            <source src="assets/second-last-bg-v.mp4" type="video/mp4">
         </video>
 
         <div  class="campaign-slogan">
@@ -241,8 +242,9 @@ if(filter_has_var(INPUT_POST, 'submit')){
             <div id="slider">
 
                 <div class="slide slide1">
-                    <div data-aos="fade-up" class="slide-content">
-                        <div class="text">CREATE A RAD PORTFOLIO &<br> SUBMIT IT!</div>
+                    <div class="slide-content">
+                        <div class="text">SUBMIT YOUR AWESOME
+PORTFOLIO</div>
                         <div class="numbertext stroke">
                             <h1>1</h1>
                         </div>
@@ -251,8 +253,8 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
                 <div class="slide slide2">
                     <div class="slide-content">
-                        <div class="text">WE'LL LINK THE PIECES TOGETHER!<br>
-                            SELECT APPLICANTS </div>
+                        <div class="text">GET SELECTED <br> BY
+OUR CREW </div>
                         <div class="numbertext stroke">
                             <h1>2</h1>
                         </div>
@@ -261,7 +263,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
                 <div class="slide slide3">
                     <div class="slide-content">
-                        <div class="text">Caption Text</div>
+                        <div class="text">COLLABORATE WITH <br> OUR PLATFORM</div>
                         <div class="numbertext stroke">
                             <h1>3</h1>
                         </div>
@@ -279,7 +281,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
     </section>
 
 
-    <section class="benefits-section">
+    <section id="benefits" class="benefits-section">
         <div class="how-banner">
             <section>
                 <div class="group">
@@ -325,7 +327,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
     <section id="collaborate" class="collaborate-section">
 
-        <div data-aos="fade-right" class="collaborate-image">
+        <div class="collaborate-image">
             <img src="assets/BOLD-LETTERS-02.png" alt="">
         </div>
 
@@ -402,23 +404,26 @@ if(filter_has_var(INPUT_POST, 'submit')){
             </section>
         </div>
 
-        <div data-aos="fade-up" class="carousel">
+        <div class="carousel">
             <div class="carousel-track-container">
                 <ul class="carousel-track">
 
                     <li class="carousel-slide current-slide">
                         <img classs="carousel-image" src="assets/tess1.png" alt="">
-                        <h2 class="carousel-text">"Quote an awesome girl"</h2>
+                        <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”</h2>
+                        <a href="">Read the article</a>
                     </li>
 
                     <li class="carousel-slide">
                         <img classs="carousel-image" src="assets/tess2.png" alt="">
-                        <h2 class="carousel-text">"that said something"</h2>
+                        <h2 class="carousel-text">“Have the confidence to do it yourself.”</h2>
+                        <a href="">Read the article</a>
                     </li>
 
                     <li class="carousel-slide">
                         <img classs="carousel-image" src="assets/tess3.png" alt="">
-                        <h2 class="carousel-text">"something awesome"</h2>
+                        <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”
+</h2><a href="">Read the article</a>
                     </li>
 
                 </ul>
