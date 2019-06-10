@@ -388,8 +388,8 @@ OUR CREW </div>
             <section>
                 <div class="group">
                     <div class="row">
-                        <span class="black-text-benefits">GET FEATURED</span>
-                        <span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">GET FEATURED</span>
+                        <span class="black-text-benefits">FEATURED GIRLS</span>
+                        <span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">FEATURED GIRLS</span>
 
 
                         <span class="extra-hows black-text-benefits">GET FEATURED</span>
