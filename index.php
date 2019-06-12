@@ -50,12 +50,14 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 $msg = 'Your email was not sent';
                 $msgClass = 'alert-danger';
             }
+
         }
     } else {
         //Failed
         $msg = 'please fill in all fields';
         $msgClass = 'alert-danger';
     }
+
 }
 
 ?>
@@ -124,6 +126,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
                     <li><a href="#about">The campaign</a></li>
                     <li><a href="#how">How to apply</a></li>
                     <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#featured">Featured</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#collaborate" class="cv-btn">Collaborate</a></li>
                 </ul>
@@ -253,7 +256,7 @@ PORTFOLIO</div>
 
                 <div class="slide slide2">
                     <div class="slide-content">
-                        <div class="text">GET SELECTED <br> BY
+                        <div class="text">GET SELECTED BY
 OUR CREW </div>
                         <div class="numbertext stroke">
                             <h1>2</h1>
@@ -263,7 +266,7 @@ OUR CREW </div>
 
                 <div class="slide slide3">
                     <div class="slide-content">
-                        <div class="text">COLLABORATE WITH <br> OUR PLATFORM</div>
+                        <div class="text">COLLABORATE WITH OUR PLATFORM</div>
                         <div class="numbertext stroke">
                             <h1>3</h1>
                         </div>
@@ -274,7 +277,9 @@ OUR CREW </div>
             <!-- Next buttons -->
             <div>
             <a class="how-next-button">
-                <p class="small-next">Next</p><img src="assets/SVG/how-next-button.svg" alt="">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </a>
             </div>
         </div>
@@ -340,34 +345,35 @@ OUR CREW </div>
                 <?php if($msg != ''): ?>
                 <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
                 <?php endif; ?>
-                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <iframe name="redirect" style="display:none;"></iframe>
+                <form id="my-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" target="redirect">
 
                     <div class="form-group">
                         <label>
                             <h4>Your Name</h4>
                         </label>
-                        <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
+                        <input type="text" id="name" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
                     </div>
 
                     <div class="form-group">
                         <label>
                             <h4>E-mail</h4>
                         </label>
-                        <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
+                        <input type="text" id="email" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
                     </div>
 
                     <div class="form-group">
                         <label>
                             <h4>Link to your online portfolio</h4>
                         </label>
-                        <input type="text" name="url" class="form-control" value="<?php echo isset($_POST['url']) ? $url : ''; ?>">
+                        <input type="text" id="url" name="url" class="form-control" value="<?php echo isset($_POST['url']) ? $url : ''; ?>">
                     </div>
 
                     <div class="form-group">
                         <label>
                             <h4>Tell us something about yourself</h4>
                         </label>
-                        <textarea name="message" class="form-control" rows="5" cols="50"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+                        <textarea name="message" id="message" class="form-control" rows="5" cols="50"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                     </div>
                     <br>
                     <button type="submit" name="submit" class="btn-form">
@@ -382,17 +388,17 @@ OUR CREW </div>
     </section>
 
 
-    <section class="featured-section">
+    <section id="featured" class="featured-section">
 
         <div class="how-banner">
             <section>
                 <div class="group">
                     <div class="row">
                         <span class="black-text-benefits">FEATURED GIRLS</span>
-                        <span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">GET FEATURED</span><span class="black-text-benefits">FEATURED GIRLS</span>
+                        <span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span><span class="black-text-benefits">FEATURED GIRLS</span>
 
 
-                        <span class="extra-hows black-text-benefits">GET FEATURED</span>
+
 
 
 
@@ -489,6 +495,9 @@ OUR CREW </div>
       delay: 150,
     disable: 'mobile',
     });
+
+
   </script>
+
 
 </html>
