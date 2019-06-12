@@ -111,7 +111,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
             <nav>
                 <div class="logo"><a href="">
-                    <img src="assets/SVG/logo-white-1.svg" /></a>
+                    <img src="assets/SVG/logo-white-1.svg" alt="Girls are awesome logo" /></a>
                 </div>
                 <div id="menuToggle">
                     <input type="checkbox" />
@@ -180,7 +180,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 <br>
                 <p class="desc-text">We recognise and encourage great talents to grow and pursue inspiring the world with their creations.</p>
                 <h2 class="text-question">WHAT IS YOUR TALENT?</h2>
-                <img class="thunder-icon" src="assets/SVG/thunder-icon.svg" alt="">
+                <img class="thunder-icon" src="assets/SVG/thunder-icon.svg" alt="Thunder logo">
             </div>
             <!--- DIV 4 --->
             <div data-aos="fade-left"></div>
@@ -317,18 +317,18 @@ OUR CREW </div>
                 <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Share your story</p>
                 <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Create an impact</p>
                 <p class="p-benefits"><img src="assets/SVG/bullet-red.svg" alt="">Inspire the community</p>
-                <img class="thunder-benefits" src="assets/SVG/thunder-icon.svg" alt="">
+                <img class="thunder-benefits" src="assets/SVG/thunder-icon.svg" alt="Thunder logo">
             </div>
         </div>
         <div data-aos="fade-right" class="benefits-image">
-            <img src="assets/SVG/family-girl.svg" alt="">
+            <img src="assets/SVG/family-girl.svg" alt="Welcome to the family girl">
         </div>
     </section>
 
     <section id="collaborate" class="collaborate-section">
 
         <div class="collaborate-image">
-            <img src="assets/BOLD-LETTERS-2.png" alt="">
+            <img src="assets/BOLD-LETTERS-2.png" alt="Be bold girl">
         </div>
 
         <div class="form-wrapper">
@@ -409,20 +409,20 @@ OUR CREW </div>
                 <ul class="carousel-track">
 
                     <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio">
-                        <img classs="carousel-image" src="assets/photography.png" alt="">
-                        <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”<br><br><p class="read-more">Read the article</p></h2>
+                        <img classs="carousel-image" src="assets/photography.png" alt="Girls are awesome photographer">
+                        <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”<br><p class="artist-name">ZUHAL KOCAN</p><p class="artist-desc">Photographer</p><br><br><p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
 
                     <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life">
-                        <img classs="carousel-image" src="assets/singer.png" alt="">
-                        <h2 class="carousel-text">“Have the confidence to do it yourself.”<br><br><p class="read-more">Read the article</p></h2>
+                        <img classs="carousel-image" src="assets/singer.png" alt="Girls are awesome singer">
+                        <h2 class="carousel-text">“Have the confidence to do it yourself.”<br><p class="artist-name">JETTA</p><p class="artist-desc">Singer</p><br><br><p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
 
                     <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music">
-                        <img classs="carousel-image" src="assets/harp.png" alt="">
-                        <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”<br><br>
+                        <img classs="carousel-image" src="assets/harp.png" alt="Harp musician">
+                        <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”<br><p class="artist-name">SELMA JUDITH</p><p class="artist-desc">Musician</p><br><br>
                         <p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
@@ -446,7 +446,7 @@ OUR CREW </div>
 
     <footer id="contact">
         <div class="right">
-            <img src="assets/SVG/logo-white-2.svg" alt="">
+            <img src="assets/SVG/logo-white-2.svg" alt="Girls are awesome logo">
             <div class="fabs">
                 <a href="https://www.facebook.com/girlsawesome"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.linkedin.com/company/girls-are-awesome/"><i class="fab fa-linkedin-in"></i></a>
@@ -454,7 +454,7 @@ OUR CREW </div>
             </div>
         </div>
         <div class="center">
-            <img class="thunder-icon-white" src="assets/SVG/thunder-icon-white.svg" alt="">
+            <img class="thunder-icon-white" src="assets/SVG/thunder-icon-white.svg" alt="Girls are awesome thunder logo">
             <div class="centered-copyright">
                 <p class="copyrights"> © Girls Are Awesome 2019</p>
             </div>

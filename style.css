@@ -736,11 +736,22 @@ display: grid;
     cursor: pointer;
 }
 
+.artist-name, .artist-desc, .read-more {
+    color: #FFF;
+    text-align: center;
+}
+
+.artist-name {
+     font-size: 40px;
+}
+
+.artist-desc {
+    font-size: 30px;
+}
+
 .read-more {
     padding-top: 2em;
-    color: #FFF;
     font-size: 15px;
-    text-align: center;
     transition: 1s ease;
 }
 
@@ -779,7 +790,7 @@ display: grid;
     color: #FFF;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -1012,8 +1023,9 @@ input[type=text]:focus, textarea:focus {
 footer {
     display: grid;
     width: 100%;
-    padding: 1em;
-    padding-top: 2.5em;
+    padding: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
     background-color: #FF5859;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
@@ -1054,7 +1066,7 @@ footer {
     color: #fff;
     margin: auto;
     padding: 20px;
-    font-size: 30px;
+    font-size: 40px;
     opacity: 1;
     transition: all 0.8s;
     cursor: pointer;
@@ -1082,7 +1094,7 @@ footer {
 .contact-content a {
      text-decoration: none;
     color: #FFF;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .fas {
