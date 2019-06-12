@@ -56,44 +56,32 @@ nextButton.addEventListener('click', e => {
 // HoW SECTION CAROUSEL
 
 
-
-let sliderImages = document.querySelectorAll('.slide'),
-         arrowRight = document.querySelector('.how-next-button'),
-        current = 0;
-
-
-// Clear all images
-
-function reset(){
-    for(let i = 0; i < sliderImages.length; i++){
-        sliderImages[i].style.display = 'none';
-
-    }
+var slideIndex = 0;
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function startSlide(){
-    reset();
-    sliderImages[0].style.display = 'block';
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+    slideIndex++; //it's incrementing (making them move)
+    if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+
 }
 
-// Show prev
-
-function slideRight(){
-    reset();
-    sliderImages[current + 1].style.display = 'block';
-    current++;
-}
-
-// Right arrow click
-
-arrowRight.addEventListener('click', function(){
-    if (current === sliderImages.length -1){
-        current = -1;
-    }
-    slideRight();
-})
-
-startSlide();
+showSlides(slideIndex);
 
 
 
@@ -127,15 +115,23 @@ const closeInput = document.querySelector("input");
 
 hamburger.addEventListener('click',() => {
   navLinks.classList.toggle("open");
-});
+    hamburger.classList.toggle('fixed');
+
 
 links.addEventListener('click',() => {
      navLinks.classList.remove("open");
+    hamburger.classList.remove('fixed');
     closeInput.checked = false;
+
 });
 
+
+    });
 /*
 const readMore = document.querySelector('.carousel-image');
 readMore.addEventListener("mouseover",showReadMore => {
     document.getElementsByClassName('read-more').style.opacity = "0";
 });*/
+
+
+
