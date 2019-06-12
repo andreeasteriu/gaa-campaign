@@ -414,19 +414,19 @@ OUR CREW </div>
             <div class="carousel-track-container">
                 <ul class="carousel-track">
 
-                    <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio">
+                    <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio" target="_blank">
                         <img classs="carousel-image" src="assets/photography.png" alt="">
                         <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”<br><br><p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
 
-                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life">
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life" target="_blank">
                         <img classs="carousel-image" src="assets/singer.png" alt="">
                         <h2 class="carousel-text">“Have the confidence to do it yourself.”<br><br><p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
 
-                    <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music">
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music" target="_blank">
                         <img classs="carousel-image" src="assets/harp.png" alt="">
                         <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”<br><br>
                         <p class="read-more">Read the article</p></h2>
