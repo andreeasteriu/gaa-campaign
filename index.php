@@ -414,19 +414,19 @@ OUR CREW </div>
             <div class="carousel-track-container">
                 <ul class="carousel-track">
 
-                    <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio">
+                    <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio" target="_blank">
                         <img classs="carousel-image" src="assets/photography.png" alt="Girls are awesome photographer">
                         <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”<br><p class="artist-name">ZUHAL KOCAN</p><p class="artist-desc">Photographer</p><br><br><p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
 
-                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life">
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life" target="_blank">
                         <img classs="carousel-image" src="assets/singer.png" alt="Girls are awesome singer">
                         <h2 class="carousel-text">“Have the confidence to do it yourself.”<br><p class="artist-name">JETTA</p><p class="artist-desc">Singer</p><br><br><p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
 
-                    <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music">
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music" target="_blank">
                         <img classs="carousel-image" src="assets/harp.png" alt="Harp musician">
                         <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”<br><p class="artist-name">SELMA JUDITH</p><p class="artist-desc">Musician</p><br><br>
                         <p class="read-more">Read the article</p></h2>
@@ -468,7 +468,7 @@ OUR CREW </div>
         </div>
         <div class="left">
             <div class="contact-center">
-                <p class="contact-content"><a href="https://goo.gl/maps/fdBzFohijxSALbTG7">
+                <p class="contact-content"><a href="https://goo.gl/maps/fdBzFohijxSALbTG7"target="_blank">
                         <i class="fas fa-map-marker-alt"></i>
                         Enghavej 40, 1647 Copenhagen</a> </p>
                 <p class="contact-content"><a href="mailto:hello@girlsareawesome.com">
