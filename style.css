@@ -168,7 +168,7 @@ body {
 .stroke {
 color: #707070;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
     }
 
 section .group .row span:hover {
@@ -191,7 +191,7 @@ p {
 
 img {
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -242,20 +242,17 @@ video {
     bottom: 2em;
     left: 0;
     color: #fff;
-    background: #FF5859;
     padding: 1em 1em .5em;
-   -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+
 }
 
 .campaign-message {
-    font-size: 1.2em;
+    font-size: 20px;
     padding-bottom: 1em;
 }
 
 .messages h3 {
-    font-size: .9em;
+    font-size: 14px;
     padding-bottom: .5em;
 }
 
@@ -384,7 +381,7 @@ nav {
 
 
 .nav-links li a {
-    font-size: 25px;
+    font-size: 20px;
     color: #FFF;
     text-decoration: none;
     pointer-events: all;
@@ -450,6 +447,7 @@ nav {
 
 .text-question {
     padding-top: 2em;
+    font-size: 20px;
 }
 
 .thunder-icon{
@@ -459,6 +457,7 @@ nav {
 
 .desc-text {
     padding: 0 3.1em;
+    font-size: 14px
 }
 
 .change-text {
@@ -531,11 +530,11 @@ section .group .row:nth-child(even) {
   animation-direction: reverse;
 }
 section .group .row span {
-    padding-top: 1em;
+
   color: transparent;
   font-size: 12vw;
   font-weight: bold;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFF;
 }
 
@@ -565,15 +564,15 @@ section .group .row span {
 }
 
 .slide1 {
-    background-image: url('assets/tess1.png')
+    background-image: url('assets/tess1.jpg')
 }
 
 .slide2 {
-    background-image: url('assets/tess2.png')
+    background-image: url('assets/tess2.jpg')
 }
 
 .slide3 {
-    background-image: url('assets/tess3.png')
+    background-image: url('assets/tess3.jpg')
 }
 
 .slide-content {
@@ -585,8 +584,8 @@ section .group .row span {
 }
 
 .text {
-    padding-top: 6em;
-    font-size: 2em;
+    font-size: 25px;
+    padding: 6em 1em;
     color: #fff;
     font-weight: bold;
 }
@@ -603,7 +602,7 @@ section .group .row span {
 .dot {
   height: 1em;
   width: 1em;
-  border: 2px solid #FFF;
+  border: 1px solid #FFF;
   border-radius: 50%;
   display: inline-block;
  margin: 5px;
@@ -620,7 +619,7 @@ section .group .row span {
     text-align: center;
     font-size: 250px;
     -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1px;
     padding-bottom: .2em;
 
 
@@ -704,11 +703,11 @@ display: grid;
 }
 
  section .group .row span.black-text-benefits {
-    padding: 1em .3em 0 0;
+    padding: 0 .3em 0 0;
   color: transparent;
   font-size: 12vw;
   font-weight: bold;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #707070; !important
 }
 
@@ -774,16 +773,18 @@ display: grid;
 }
 
 .artist-name {
-     font-size: 40px;
+     font-size: 20px;
+
 }
 
 .artist-desc {
-    font-size: 30px;
+    font-size: 16px;
+    padding-bottom: 5em;
 }
 
 .read-more {
-    padding-top: 2em;
-    font-size: 15px;
+    padding-top: 5em;
+    font-size: 14px;
     transition: 1s ease;
 }
 
@@ -821,8 +822,9 @@ display: grid;
     z-index: 2;
     color: #FFF;
     position: absolute;
+    font-size: 20px;
     text-align: center;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -872,7 +874,7 @@ display: grid;
 .carousel-nav {
     display: flex;
     justify-content: center;
-    width: 30vw;
+   width: 40vw;
     margin: 1em auto;
 
 }
@@ -916,14 +918,14 @@ h1.title-collaborate {
 }
 
 h4 {
-    font-size: 18px;
+   font-size: 16px;
     color: #FFF;
 }
 
 .stroke-collaborate {
     color: #FFF;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
 
 }
 
@@ -933,7 +935,7 @@ h4 {
 }
 
 .form-wrapper {
-    padding: 3em 2em 3em;
+   padding: 1.5em 2em 1em;
     background-color: #707070;
 
 }
@@ -973,9 +975,11 @@ input[type=text]:focus, textarea:focus {
 
 .alert {
     display: flex;
-    padding: .8em;
+    padding: 8px;
+    width: 70%;
     justify-content: center;
-    font-size: 1.1em;
+    margin: auto;
+    font-size: 14px;
     border-radius: 50px;
 
 }
@@ -996,12 +1000,11 @@ input[type=text]:focus, textarea:focus {
     display:block;
     width: 50%;
     background: #FF5859;
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 16px;
     vertical-align: middle;
     position: relative;
     z-index: 1;
-    padding: 12px 30px;
+    padding: 8px;
     position: relative;
     -webkit-backface-visibility: hidden;
     overflow: hidden;
@@ -1056,9 +1059,7 @@ input[type=text]:focus, textarea:focus {
 footer {
     display: grid;
     width: 100%;
-    padding: 2em;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 5em 2em 1em;
     background-color: #FF5859;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
@@ -1085,8 +1086,8 @@ footer {
 }
 
 .right img {
-    width: 50%;
-    margin: auto;
+    width: 60%;
+   margin: 0 auto 3em;
 }
 
 .center img {
@@ -1099,7 +1100,7 @@ footer {
     color: #fff;
     margin: auto;
     padding: 20px;
-    font-size: 40px;
+    font-size: 30px;
     opacity: 1;
     transition: all 0.8s;
     cursor: pointer;
@@ -1113,9 +1114,10 @@ footer {
 }
 
 .copyrights {
-    padding-top: 2em;
+    padding-top: 3em;
     text-align: center;
     color: #FFF;
+    font-size: 14px;
 }
 
 .contact-content {
@@ -1127,7 +1129,7 @@ footer {
 .contact-content a {
      text-decoration: none;
     color: #FFF;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .fas {
@@ -1153,6 +1155,9 @@ footer {
 
     }
 
+    .stroke {
+            -webkit-text-stroke-width: 2px;
+    }
     /***** NAVIGATION ******/
 
     .nav-links.open {
@@ -1164,11 +1169,19 @@ footer {
 
 /*CAMPAIGN SLOGAN*/
     .campaign-slogan {
-        font-size: 1.6em;
-        bottom: 1em;
-        box-shadow: none;
+        font-size: 20px;
+        bottom: 4em;
+        left: 1em;
+
     }
 
+    .campaign-message {
+        font-size: 30px;
+    }
+
+    .messages h3 {
+        font-size: 20px;
+    }
 /****DESCRIPTION SECTION TABLET****/
 
     #about {
@@ -1196,12 +1209,12 @@ footer {
 
     .desc-text {
         padding: 0 10em;
-        font-size: 18px;
+       font-size: 16px;
     }
 
     .text-question {
         padding: 3em;
-        font-size: 2em;
+        font-size: 30px;
     }
 
     .thunder-icon {
@@ -1246,8 +1259,8 @@ footer {
     text-align: center;
     font-size: 350px;
     -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 3px;
-    padding-bottom: .5em;
+    -webkit-text-stroke-width: 2px;
+    padding-bottom: 30px;
 }
 
     .how-next-button {
@@ -1264,7 +1277,7 @@ footer {
   font-weight: bold;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
-    padding-top: .5em;
+    padding-top: 0;
 }
 
 
@@ -1312,7 +1325,7 @@ display: grid;
 }
 
     section .group .row span.black-text-benefits {
-    padding: .5em .3em 0 0;
+    padding: 0 .3em 0 0;
     }
 
 
@@ -1332,8 +1345,8 @@ display: grid;
     }
 
     .form-wrapper {
-        margin: 0;
-        padding: 14em 5em;
+        margin: 0 2em;
+    padding: 2em 5em;
         grid-column: 1/ span 2;
         align-self: center;
 
@@ -1348,10 +1361,10 @@ display: grid;
     }
 
     .btn-form {
-        margin-top: 1em;
+        margin-top: 20px;
 
-        padding: 12px 30px;
-        font-size: 21px;
+        padding: 8px;
+        font-size: 20px;
     }
 
     /****** FEATURED SECTION ******/
@@ -1372,13 +1385,34 @@ display: grid;
     margin: auto;
     }
 
+    section .group .row span.black-text-benefits {
+        -webkit-text-stroke-width: 2px;
+    }
+
+
+    .read-more {
+            padding-top: 10em;
+    }
+
+    .artist-desc {
+
+        padding-bottom: 10em;
+
+    }
+
+    .carousel-nav {
+        width: 30vw;
+    }
+
     /****** FOOTER SECTION ******/
 
 footer {
     display: grid;
      position: relative;
     background-color: #FF5859;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 35% 30% 35%;
+    padding: 5em 2em;
+    grid-gap: 0;
 }
 
 
@@ -1386,6 +1420,8 @@ footer {
     grid-column: 1/ span 1;
     grid-row: 1/span 2;
      text-align: center;
+
+
 }
 
 .left {
@@ -1400,11 +1436,10 @@ footer {
     grid-column: 2/span 1;
     grid-row: 1/ span 2;
      text-align: center;
+     align-self: center;
+
 }
 
-    footer p {
-        font-size: 13px;
-    }
 
 
     .copyrights {
@@ -1418,6 +1453,19 @@ footer {
 
     .center img {
         width: 8%;
+    }
+
+    .right img {
+        margin: auto;
+        width: 50%;
+    }
+
+    .contact-content a {
+        font-size: 16px;
+    }
+
+    .fab {
+        padding-bottom: 0;
     }
 }
 
@@ -1451,7 +1499,7 @@ footer {
 
     .text-question {
         padding: 1.5em 0 0 0;
-        font-size: 2em;
+        font-size: 24px;
         text-align: center;
     }
 
@@ -1484,7 +1532,7 @@ footer {
     }
 
     .messages h3 {
-        padding-bottom: 0;
+        padding: 0 1.2em;
     }
 
     .message-text {
@@ -1557,7 +1605,7 @@ footer {
 
 
 .nav-links li a {
-    font-size: 19px;
+    font-size: 20px;
     color: #FFF;
     text-decoration: none;
 }
@@ -1577,7 +1625,7 @@ footer {
     vertical-align: middle;
     position: relative;
     z-index: 1;
-    padding: 12px 30px;
+    padding: 8px 30px;
     vertical-align: middle;
     position: relative;
     z-index: 1;
@@ -1757,7 +1805,7 @@ display: grid;
     }
 
     .benefits-image img {
-           width: 737px;
+           width: 735px;
 margin-right: 2em;
 
 
@@ -1826,7 +1874,7 @@ margin-right: 2em;
     }
 
     .numbertext {
-        bottom: 20%;
+        bottom: 15%;
         right: 2em;
     }
 
@@ -1880,8 +1928,8 @@ margin-right: 2em;
     .form-wrapper {
         grid-column: 2/span 1;
       margin-right: 2em;
-        height: 100vh;
-        padding: 4em 100px;
+        height: 100%;
+        padding: 2em 100px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1890,13 +1938,14 @@ margin-right: 2em;
     .collaborate-image {
         display: grid;
         grid-column: 1/span 1;
+        align-self: center;
 
     }
 
     .collaborate-image img{
       width: 100%;
-        margin-right: -1em;
-            margin-left: 2em;
+        margin-right: -3em;
+
         z-index: 2;
     }
 
@@ -1904,6 +1953,38 @@ margin-right: 2em;
         margin-top: 0;
        padding: 10px 50px;
     }
+    /******* FEATURED SECTION*******/
+
+
+
+    .carousel-text {
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .artist-name {
+        font-size: 24px;
+    }
+
+    .artist-desc {
+        font-size: 16px;
+        padding-bottom: 7em;
+
+    }
+
+    .read-more {
+        padding-top: 7em;
+        font-size: 20px;
+        opacity: 0;
+         animation: .5s ease-out;
+    }
+
+    .read-more:hover {
+        opacity: 1;
+        animation: .5s ease-in;
+    }
+
+
     /****** FOOTER SECTION ******/
 
     .center img {

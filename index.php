@@ -54,7 +54,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
         }
     } else {
         //Failed
-        $msg = 'please fill in all fields';
+        $msg = 'Please fill in all fields';
         $msgClass = 'alert-danger';
     }
 
@@ -139,10 +139,10 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
 
         <video class="video1" autoplay muted loop>
-            <source src="assets/Mobile-bg-video.mp4">
+            <source src="assets/Mobile_video_bg.mp4">
         </video>
         <video class="video2" autoplay muted loop>
-            <source src="assets/second-last-bg-v.mp4" type="video/mp4">
+            <source src="assets/background-video-gaa-opacity.mp4" type="video/mp4">
         </video>
 
         <div  class="campaign-slogan">
@@ -345,8 +345,8 @@ OUR CREW </div>
                 <?php if($msg != ''): ?>
                 <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
                 <?php endif; ?>
-                <iframe name="redirect" style="display:none;"></iframe>
-                <form id="my-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" target="redirect">
+
+                <form id="my-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
                     <div class="form-group">
                         <label>
@@ -414,24 +414,38 @@ OUR CREW </div>
             <div class="carousel-track-container">
                 <ul class="carousel-track">
 
-                    <li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio" target="_blank">
-                        <img classs="carousel-image" src="assets/photography.png" alt="Girls are awesome photographer">
-                        <h2 class="carousel-text">“If I touch people with my photography, I feel fulfilled.”<br><p class="artist-name">ZUHAL KOCAN</p><p class="artist-desc">Photographer</p><br><br><p class="read-more">Read the article</p></h2>
-                        </a>
-                    </li>
-
-                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life" target="_blank">
-                        <img classs="carousel-image" src="assets/singer.png" alt="Girls are awesome singer">
-                        <h2 class="carousel-text">“Have the confidence to do it yourself.”<br><p class="artist-name">JETTA</p><p class="artist-desc">Singer</p><br><br><p class="read-more">Read the article</p></h2>
-                        </a>
-                    </li>
-
-                    <li class="carousel-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music" target="_blank">
-                        <img classs="carousel-image" src="assets/harp.png" alt="Harp musician">
-                        <h2 class="carousel-text">“Every moment and every emotion, positive or destructive, is an inspiration.”<br><p class="artist-name">SELMA JUDITH</p><p class="artist-desc">Musician</p><br><br>
+<li class="carousel-slide current-slide"><a href="https://girlsareawesome.com/selma-judiths-window-into-meaningful-music" target="_blank">
+                        <img classs="carousel-image" src="assets/harp.jpg" alt="Harp musician">
+                        <h2 class="carousel-text">
+                        <p class="artist-name">SELMA JUDITH</p>
+                        <p class="artist-desc">Musician</p>
+                        “Every moment and every emotion, positive or destructive, is an inspiration.”
                         <p class="read-more">Read the article</p></h2>
                         </a>
                     </li>
+
+
+
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/jettas-new-ep-tonic-will-cure-your-entire-life" target="_blank">
+                        <img classs="carousel-image" src="assets/singer.jpg" alt="Girls are awesome singer">
+                        <h2 class="carousel-text">
+                        <p class="artist-name">JETTA</p>
+                        <p class="artist-desc">Singer</p>
+                        “Have the confidence to do it yourself.”
+                        <p class="read-more">Read the article</p></h2>
+                        </a>
+                    </li>
+
+                    <li class="carousel-slide"><a href="https://girlsareawesome.com/zuhal-kocans-dreamy-analogue-visio" target="_blank">
+                        <img classs="carousel-image" src="assets/photography.jpg" alt="Girls are awesome photographer">
+                        <h2 class="carousel-text">
+                        <p class="artist-name">ZUHAL KOCAN</p>
+                        <p class="artist-desc">Photographer</p>
+                        “If I touch people with my photography, <br> I feel fulfilled.”
+                        <p class="read-more">Read the article</p></h2>
+                        </a>
+                    </li>
+
 
                 </ul>
             </div>

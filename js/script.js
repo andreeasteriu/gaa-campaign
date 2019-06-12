@@ -24,7 +24,9 @@ slides.forEach(setSlidePosition);
 
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
+
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 
@@ -127,11 +129,15 @@ links.addEventListener('click',() => {
 
 
     });
-/*
-const readMore = document.querySelector('.carousel-image');
+
+const readMore = document.querySelector('.carousel-slide');
+const hover = document.querySelector('.read-more');
 readMore.addEventListener("mouseover",showReadMore => {
-    document.getElementsByClassName('read-more').style.opacity = "0";
-});*/
+    hover.style.opacity = 1;
+});
 
+readMore.addEventListener("mouseout",showReadMore => {
+    hover.style.opacity = 0;
 
+});
 
