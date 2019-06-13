@@ -23,6 +23,9 @@ if(filter_has_var(INPUT_POST, 'submit')){
             //Failed
         $msg = 'Please use a valid email';
         $msgClass = 'alert-danger';
+        echo '<script type="text/javascript">
+  alert("' . $msg . '");</script>';
+
 
         } else {
             //Passed
@@ -46,9 +49,14 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 // Email Sent
                 $msg = 'Your email has been sent';
                 $msgClass = 'alert-success';
+                echo '<script type="text/javascript">
+  alert("' . $msg . '");</script>';
+
             } else {
                 $msg = 'Your email was not sent';
                 $msgClass = 'alert-danger';
+                echo '<script type="text/javascript">
+  alert("' . $msg . '");</script>';
             }
 
         }
@@ -56,9 +64,12 @@ if(filter_has_var(INPUT_POST, 'submit')){
         //Failed
         $msg = 'Please fill in all fields';
         $msgClass = 'alert-danger';
+        echo '<script type="text/javascript">
+  alert("' . $msg . '");</script>';
     }
 
 }
+
 
 ?>
 
@@ -81,6 +92,31 @@ if(filter_has_var(INPUT_POST, 'submit')){
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="aos.css">
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1930787677214790');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1930787677214790&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+
 </head>
 
 
@@ -343,8 +379,12 @@ OUR CREW </div>
 
             <div class="form-container">
                 <?php if($msg != ''): ?>
+
+
                 <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
                 <?php endif; ?>
+
+
 
                 <form id="my-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 

@@ -57,14 +57,16 @@ nextButton.addEventListener('click', e => {
 
 // HoW SECTION CAROUSEL
 
-
+var timer = null;
 var slideIndex = 0;
 function currentSlide(n) {
+    clearTimeout(timer);
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   var i;
+
   var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
@@ -79,7 +81,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000);
+    timer = setTimeout(showSlides, 3000);
 
 }
 
@@ -140,4 +142,14 @@ readMore.addEventListener("mouseout",showReadMore => {
     hover.style.opacity = 0;
 
 });
+
+
+//updates the current entry in the session history to have the gi
+const submitButton = document.querySelector('.btn-form');
+
+submitButton.addEventListener('click', ()=> {
+  window.onload = function() {
+        window.history.replaceState( null, null, window.location.href = '#collaborate' );
+    }
+    });
 
