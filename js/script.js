@@ -148,8 +148,11 @@ readMore.addEventListener("mouseout",showReadMore => {
 const submitButton = document.querySelector('.btn-form');
 
 submitButton.addEventListener('click', ()=> {
-  window.onload = function() {
+  document.ready ( function() {
         window.history.replaceState( null, null, window.location.href = '#collaborate' );
-    }
-    });
+
+    })
+
+});
+
 

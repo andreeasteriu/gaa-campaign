@@ -1136,7 +1136,9 @@ footer {
     padding-right: 5px;
 }
 
-
+.title-contact {
+    display: none;
+}
 
 
 
@@ -2005,6 +2007,13 @@ margin-right: 2em;
 
     .contact-center {
      align-self: center;
+    }
+
+    .title-contact {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
     }
 
 }

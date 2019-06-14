@@ -70,7 +70,6 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
 }
 
-
 ?>
 
 
@@ -416,7 +415,7 @@ OUR CREW </div>
                         <textarea name="message" id="message" class="form-control" rows="5" cols="50"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                     </div>
                     <br>
-                    <button type="submit" name="submit" class="btn-form">
+                    <button type="submit" name="submit"  class="btn-form">
                         <h3>Submit</h3>
                     </button>
                 </form>
@@ -522,6 +521,7 @@ OUR CREW </div>
         </div>
         <div class="left">
             <div class="contact-center">
+                <p class="contact-content title-contact">Contact</p>
                 <p class="contact-content"><a href="https://goo.gl/maps/fdBzFohijxSALbTG7"target="_blank">
                         <i class="fas fa-map-marker-alt"></i>
                         Enghavej 40, 1647 Copenhagen</a> </p>
